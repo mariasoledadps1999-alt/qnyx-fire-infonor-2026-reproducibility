@@ -1,0 +1,39 @@
+#Run Log for MTT run: BENCH006_CASE01_FLAT_CALM
+#FlamMap Version 6.2.45.0
+#Run Completed: 2026-08-18 11:03:03
+#Run Time (Seconds): 0.31
+#Landscape File: C:\Users\Hp\Desktop\forestal\motor\benchmarks\qnyx_bench_006_flammap_wind_slope\flammap\landscapes\bench006_flat.lcp
+#Landscape Resolution: 30.0
+#FUEL_MOISTURE_FILE: C:\Users\Hp\Desktop\forestal\motor\benchmarks\qnyx_bench_006_flammap_wind_slope\flammap\common\flame_benchmark.fms
+FlamMap-Inputs-File-Version-1
+FUEL_MOISTURES_DATA: 2
+0 8 9 10 100 100 10
+1 8 9 10 100 100 10
+
+WIND_SPEED: 0
+WIND_DIRECTION: 0
+WIND_SPEED_UNITS: 0 (mph @ 20')
+FOLIAR_MOISTURE_CONTENT: 100.000000
+CROWN_FIRE_METHOD: ScottReinhardt
+#SELECTED FLAMMAP OUTPUTS
+SPREADRATE:
+MIDFLAME:
+MAXSPREADDIR:
+ELLIPSEDIM_A:
+ELLIPSEDIM_B:
+ELLIPSEDIM_C:
+#END SELECTED FLAMMAP OUTPUTS
+
+MTT_RESOLUTION: 30.000000
+MTT_SIM_TIME: 180.000000
+MTT_TRAVEL_PATH_INTERVAL: 500.000000
+MTT_SPOT_PROBABILITY: 0.000000
+MTT_SPOT_DELAY: 0
+MTT_IGNITION_FILE: C:\Users\Hp\Desktop\forestal\motor\benchmarks\qnyx_bench_006_flammap_wind_slope\flammap\common\ignition_center.shp
+NodeSpreadNumLat: 6
+NodeSpreadNumVert: 4
+#SELECTED MTT OUTPUTS
+#MTT_ROS
+#MTT_ARRIVAL
+#END SELECTED MTT OUTPUTS
+#SPOTTING_SEED: -1

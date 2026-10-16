@@ -1,0 +1,610 @@
+{
+  "audit_id": "BENCH005_ABSOLUTE_GEOSPATIAL_METADATA_AUDIT",
+  "description": "Auditor\u00eda exhaustiva de campos de metadatos geoespaciales absolutos en archivos JSON de BENCH-005",
+  "files_without_absolute_geospatial_metadata": [
+    "local_physics.json",
+    "run_manifest.json",
+    "run_metadata.json",
+    "scenario_used.json",
+    "statistics.json"
+  ],
+  "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED (en timeline.json y web_export.json; absent en manifests, configs y statistics)",
+  "summary": {
+    "files_without_absolute_geospatial_metadata_count": 105,
+    "timeline_json_count_with_extent_utm": 21,
+    "web_export_json_count_with_extent": 21
+  },
+  "timeline_json_records": [
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_01_control_flat_calm/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071550.0,
+        194880.0,
+        6071580.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_02_control_pure_wind_bench002/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194940.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_03_control_pure_slope_10deg/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071550.0,
+        194910.0,
+        6071580.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_04_moderate_aligned_east/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194970.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_05_moderate_opposed_east/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194940.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_06_moderate_crosswind_plus90/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194940.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_07_moderate_crosswind_minus90/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194940.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_08_moderate_oblique_45/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194970.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_09_moderate_oblique_135/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194850.0,
+        6071520.0,
+        194940.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_10_balanced_aligned_east/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071490.0,
+        195060.0,
+        6071640.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_11_balanced_opposed_cancellation/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071550.0,
+        194880.0,
+        6071580.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_12_balanced_crosswind_plus90/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071550.0,
+        194970.0,
+        6071700.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_13_balanced_crosswind_minus90/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071430.0,
+        194970.0,
+        6071580.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_14_strong_wind_aligned_east/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071400.0,
+        195390.0,
+        6071730.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_15_strong_wind_opposed_east/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071400.0,
+        195360.0,
+        6071730.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_16_strong_wind_crosswind/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071400.0,
+        195360.0,
+        6071730.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_17_rotation_aligned_north/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071550.0,
+        194910.0,
+        6071670.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_18_rotation_aligned_west/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194760.0,
+        6071520.0,
+        194880.0,
+        6071610.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_19_rotation_aligned_south/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071460.0,
+        194910.0,
+        6071580.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_20_rotation_opposed_north/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071550.0,
+        194910.0,
+        6071640.0
+      ]
+    },
+    {
+      "crs": "EPSG:32719",
+      "field_name": "spatial_extent_utm",
+      "file": "case_21_rotation_crosswind_north/timeline.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED",
+      "sample_entry_0_extent": [
+        194820.0,
+        6071550.0,
+        194910.0,
+        6071640.0
+      ]
+    }
+  ],
+  "total_json_files_audited": 147,
+  "web_export_json_records": [
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_01_control_flat_calm/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_02_control_pure_wind_bench002/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_03_control_pure_slope_10deg/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_04_moderate_aligned_east/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_05_moderate_opposed_east/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_06_moderate_crosswind_plus90/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_07_moderate_crosswind_minus90/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_08_moderate_oblique_45/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_09_moderate_oblique_135/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_10_balanced_aligned_east/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_11_balanced_opposed_cancellation/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_12_balanced_crosswind_plus90/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_13_balanced_crosswind_minus90/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_14_strong_wind_aligned_east/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_15_strong_wind_opposed_east/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_16_strong_wind_crosswind/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_17_rotation_aligned_north/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_18_rotation_aligned_west/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_19_rotation_aligned_south/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_20_rotation_opposed_north/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    },
+    {
+      "field_extent_epsg32719": [
+        190350.0,
+        6067050.0,
+        199380.0,
+        6076080.0
+      ],
+      "field_extent_epsg4326": [
+        -72.4212836,
+        -35.6895674,
+        -72.0799134,
+        -35.4105892
+      ],
+      "file": "case_21_rotation_crosswind_north/web_export.json",
+      "placement_classification": "ABSOLUTE_JSON_GEOSPATIAL_METADATA = SHIFTED"
+    }
+  ]
+}

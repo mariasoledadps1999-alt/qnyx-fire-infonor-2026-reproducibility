@@ -1,0 +1,81 @@
+{
+    "benchmark_id": "QNYX-BENCH-006",
+    "case_id": "case_08_wind_slope_opposed_180deg",
+    "role": "WIND_SLOPE_OPPOSED_180",
+    "description": "Interacci\u00f3n con viento y pendiente opuestos a 180\u00b0 (upslope=270\u00b0 W, wind from 270\u00b0).",
+    "engine_identity": "Q-NYX Canonical Fire Propagation Engine (Rothermel + Vector Resultant + Ellipse + Raster Dijkstra)",
+    "propagator": "RASTER_DIJKSTRA_MINIMUM_ARRIVAL_TIME",
+    "propagator_scientific_description": "propagador de tiempo m\u00ednimo tipo Dijkstra sobre un grafo r\u00e1ster discreto",
+    "git_baseline_commit": "69196fd2c6ef09eab68bcc535abc1bb9a38fcdb8",
+    "git_baseline_tag": "phase-5.4c4-bench-006-flammap-cases01-08-complete",
+    "timestamp": "2026-10-16T17:21:31Z",
+    "spatial_domain": {
+        "shape": [
+            301,
+            301
+        ],
+        "resolution_m": 30.0,
+        "crs": "EPSG:32719",
+        "transform": [
+            30.0,
+            0.0,
+            188850.0,
+            0.0,
+            -30.0,
+            6077580.0
+        ],
+        "bounds": {
+            "left": 188850.0,
+            "bottom": 6068550.0,
+            "right": 197880.0,
+            "top": 6077580.0
+        },
+        "ignition_row": 150,
+        "ignition_col": 150,
+        "ignition_coordinates_utm": [
+            193365.0,
+            6073065.0
+        ],
+        "horizon_minutes": 180.0,
+        "stencil": "stencil_16",
+        "intent": "SURFACE_FIRE_ONLY"
+    },
+    "meteorological_and_fuel_inputs": {
+        "fuel_model": "FM1",
+        "fuel_moisture": {
+            "dead_1h": 0.08,
+            "dead_10h": 0.09,
+            "dead_100h": 0.1,
+            "live_herb": 1.0,
+            "live_woody": 1.0
+        },
+        "midflame_wind_speed_ms": 0.810649037361145,
+        "wind_from_direction_deg": 270.0,
+        "wind_towards_direction_deg": 90.0,
+        "slope_deg": 10.0,
+        "upslope_direction_deg": 270.0,
+        "aspect_downslope_deg": 90.0
+    },
+    "local_physics_consistency": {
+        "observed_head_ros_m_min": 2.839365894694968,
+        "frozen_preflight_head_ros_m_min": 2.839366,
+        "head_ros_difference_signed_m_min": -1.0530503224970289e-07,
+        "head_ros_difference_rel_pct": -3.7087516103842505e-06,
+        "frozen_preflight_heading_deg": 90.0,
+        "local_consistency_status": "PASS"
+    },
+    "spatial_propagation_metrics": {
+        "arrival_cells_180min": 331,
+        "arrival_area_ha_180min": 29.79,
+        "arrival_min_min": 0.0,
+        "arrival_max_min": 179.61756896972656,
+        "row_min": 141,
+        "row_max": 159,
+        "col_min": 145,
+        "col_max": 167,
+        "max_radial_distance_m": 510.0,
+        "border_contacts": 0,
+        "arrival_burned_mask_equal": true,
+        "domain_clipping_status": "PASS_ZERO_BORDER_CONTACTS"
+    }
+}

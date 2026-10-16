@@ -1,0 +1,299 @@
+{
+    "benchmark_id": "QNYX-BENCH-006",
+    "phase": "5.5A",
+    "overall_execution_status": "QNYX_CASES01_08_EXECUTION_COMPLETE",
+    "engine_identity": "Q-NYX Canonical Fire Propagation Engine (Rothermel + Vector Resultant + Ellipse + Raster Dijkstra)",
+    "propagator": "RASTER_DIJKSTRA_MINIMUM_ARRIVAL_TIME",
+    "propagator_scientific_description": "propagador de tiempo m\u00ednimo tipo Dijkstra sobre un grafo r\u00e1ster discreto",
+    "git_baseline_commit": "69196fd2c6ef09eab68bcc535abc1bb9a38fcdb8",
+    "git_baseline_tag": "phase-5.4c4-bench-006-flammap-cases01-08-complete",
+    "total_qnyx_cases": 8,
+    "validation_gates": {
+        "QNYX_EIGHT_CASES_SPATIAL_OUTPUTS_EXIST": {
+            "status": "PASS",
+            "description": "Los 8 directorios de caso en qnyx/ contienen arrival_time_min.tif, burned_mask_180min.tif, perimeter_180min.geojson y run_metadata.json."
+        },
+        "QNYX_GRID_METADATA_EXACT_PASS": {
+            "status": "PASS",
+            "description": "Las 8 salidas r\u00e1ster de llegada coinciden exactamente con la grilla 301x301 a 30m EPSG:32719 con transform oficial."
+        },
+        "QNYX_IGNITION_ZERO_PASS": {
+            "status": "PASS",
+            "description": "Tiempo de llegada en la ignici\u00f3n central (150, 150) es exactamente 0.0 min en los 8 casos."
+        },
+        "QNYX_LOCAL_PHYSICS_CONSISTENCY_PASS": {
+            "status": "PASS",
+            "description": "ROS de avance en la ignici\u00f3n coincide con las predicciones locales anal\u00edticas congeladas (< 0.01% error num\u00e9rico)."
+        },
+        "QNYX_ARRIVAL_BURNED_MASK_PARITY_PASS": {
+            "status": "PASS",
+            "description": "Paridad 100% exacta entre las celdas alcanzadas con t <= 180 min y la m\u00e1scara binaria burned_mask_180min en los 8 casos."
+        },
+        "QNYX_ZERO_BORDER_CLIPPING_PASS": {
+            "status": "PASS",
+            "description": "Cero contactos de borde con los l\u00edmites del dominio (301x301) en los 8 casos a 180 minutos de horizonte."
+        },
+        "QNYX_RUN_METADATA_SCHEMA_PRESENCE_PASS": {
+            "status": "PASS",
+            "description": "Todos los campos requeridos del esquema existen en los 8 archivos run_metadata.json."
+        },
+        "QNYX_RUN_METADATA_DETERMINISM_PASS": {
+            "status": "PASS",
+            "description": "Igualdad determin\u00edstica exacta de todos los valores cient\u00edficos/de configuraci\u00f3n en run_metadata.json (excluyendo timestamps de ejecuci\u00f3n)."
+        },
+        "QNYX_OUTPUT_MANIFEST_HASH_SIZE_PASS": {
+            "status": "PASS",
+            "description": "Paridad exacta de tama\u00f1o en bytes y hash SHA256 de todas las salidas en los 8 output_manifest.json contra disco."
+        },
+        "QNYX_OUTPUT_MANIFEST_FULL_CONTRACT_PASS": {
+            "status": "PASS",
+            "description": "Cumplimiento 100% verificado del contrato completo de capas (shape, CRS, transform, dtype, NoData, roles sem\u00e1nticos y procedencia directa)."
+        },
+        "QNYX_PERIMETER_DETERMINISM_PASS": {
+            "status": "PASS",
+            "description": "Determinismo geom\u00e9trico estricto del per\u00edmetro GeoJSON (tipo de geometr\u00eda, coordenadas, \u00e1rea, longitud y bounds id\u00e9nticos)."
+        },
+        "QNYX_ARRIVAL_DETERMINISM_PASS": {
+            "status": "PASS",
+            "description": "Determinismo estricto de las grillas de llegada arrival_time_min.tif (m\u00e1scara de alcanzadas id\u00e9ntica y delta num\u00e9rico 0.0)."
+        },
+        "QNYX_BURNED_MASK_DETERMINISM_PASS": {
+            "status": "PASS",
+            "description": "Determinismo estricto y paridad 100% exacta de las m\u00e1scaras burned_mask_180min.tif."
+        },
+        "QNYX_CASES01_08_EXECUTION_DETERMINISM_PASS": {
+            "status": "PASS",
+            "description": "Determinismo global de las 8 ejecuciones espaciales de Q-NYX completamente verificado y soportado por evidencia reproducible."
+        },
+        "QNYX_CASES01_08_EXECUTION_COMPLETE": {
+            "status": "PASS",
+            "description": "Las 8 ejecuciones espaciales de Q-NYX completadas y auditadas exitosamente a horizonte completo."
+        }
+    },
+    "cases_audit": {
+        "case_01_control_flat_calm_bench001": {
+            "case_id": "case_01_control_flat_calm_bench001",
+            "role": "CONTROL_FLAT_CALM",
+            "head_ros_m_min": 1.2120312493509584,
+            "preflight_head_ros_m_min": 1.212031,
+            "heading_deg": 0.0,
+            "arrival_cells": 161,
+            "arrival_area_ha": 14.49,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.10597229003906,
+            "row_range": [
+                143,
+                157
+            ],
+            "col_range": [
+                143,
+                157
+            ],
+            "max_radial_distance_m": 212.13203435596427,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "5540071431ED0FF4896677AD8FC112BA0AA8F82D912C60E44EE09471346A0753",
+                "burned_mask_180min.tif": "FB10D01F9ACB43A66422F9563457BEDC0354D90A551CA950C8AC57E40E2EAF54",
+                "perimeter_180min.geojson": "50F8E0C1052BC052266D0002D1429B1CB3B828737EB79CACD20BA0840428E536",
+                "run_metadata.json": "AE6221F7175F3937388736A21ECD4601DF9AED92697925056C5BFC2EA10F8BE8"
+            }
+        },
+        "case_02_control_pure_wind_bench002": {
+            "case_id": "case_02_control_pure_wind_bench002",
+            "role": "CONTROL_PURE_WIND",
+            "head_ros_m_min": 4.390204714409195,
+            "preflight_head_ros_m_min": 4.390205,
+            "heading_deg": 90.0,
+            "arrival_cells": 678,
+            "arrival_area_ha": 61.019999999999996,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.48573303222656,
+            "row_range": [
+                137,
+                163
+            ],
+            "col_range": [
+                143,
+                176
+            ],
+            "max_radial_distance_m": 780.0,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "CC9CB223E457CB992680B5FE577AC1F64A9D99C27D703B5BE7E751EF46C0E989",
+                "burned_mask_180min.tif": "D8E6EECE4A9CD2624E993D5EF769E3F78035A9660D67A0B7266790DDF30A2593",
+                "perimeter_180min.geojson": "24ED50B34B0356AD120B0CE9514F8A05A1A9C36904380A537A2D0DE8271C0D00",
+                "run_metadata.json": "9948567063583D74805F3A8F7477336666824C2EB2FCEC1B320CC90277FD1431"
+            }
+        },
+        "case_03_control_pure_slope_10deg": {
+            "case_id": "case_03_control_pure_slope_10deg",
+            "role": "CONTROL_PURE_SLOPE",
+            "head_ros_m_min": 2.762870069065185,
+            "preflight_head_ros_m_min": 2.76287,
+            "heading_deg": 90.0,
+            "arrival_cells": 316,
+            "arrival_area_ha": 28.439999999999998,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.8595733642578,
+            "row_range": [
+                141,
+                159
+            ],
+            "col_range": [
+                145,
+                166
+            ],
+            "max_radial_distance_m": 480.9365862564419,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "9CDB21860D2990F8C13D8374D73ADBCF63AAA9696BE3AE5FAD5882CDAADCC0F7",
+                "burned_mask_180min.tif": "39366E02F7017FF0BBA91A578BD5437E8274424B82A919EFD6A36FDA6B93AC14",
+                "perimeter_180min.geojson": "B78DC36CAF999A8FECC12F1A2328F51619BE8B31CB430AE5ADC1E195B6624001",
+                "run_metadata.json": "DB8034FFA151B4633AD32046B5BD6C4287BAEB8E8D9A7CAFDD6B0FC88FE7DDB9"
+            }
+        },
+        "case_04_wind_slope_aligned_0deg": {
+            "case_id": "case_04_wind_slope_aligned_0deg",
+            "role": "WIND_SLOPE_ALIGNED",
+            "head_ros_m_min": 5.941043534123422,
+            "preflight_head_ros_m_min": 5.941044,
+            "heading_deg": 90.0,
+            "arrival_cells": 1126,
+            "arrival_area_ha": 101.33999999999999,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.94943237304688,
+            "row_range": [
+                133,
+                167
+            ],
+            "col_range": [
+                142,
+                185
+            ],
+            "max_radial_distance_m": 1050.4284840006958,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "EB5CC67FE6EDC529BAFF40C747A9BE1CCDC170FB42D22B42570B2A1EA0CB45F1",
+                "burned_mask_180min.tif": "86290B4A7A2F2188C0463504A240ED6CC487CDD7BB95C4153E4D50C281FBF2DC",
+                "perimeter_180min.geojson": "A7CC8129EDEDA3E0F26D734E925E45B29255344C9D02103111E9A7AB39F8D236",
+                "run_metadata.json": "3118B5AFE049B93E66C6E67C4BFB0CB7234D937E2D7F77EC6AC3AFF0FB0AB9C8"
+            }
+        },
+        "case_05_wind_slope_oblique_45deg": {
+            "case_id": "case_05_wind_slope_oblique_45deg",
+            "role": "WIND_SLOPE_OBLIQUE_45",
+            "head_ros_m_min": 5.6252287997603005,
+            "preflight_head_ros_m_min": 5.625229,
+            "heading_deg": 75.6122,
+            "arrival_cells": 1032,
+            "arrival_area_ha": 92.88,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.7007293701172,
+            "row_range": [
+                131,
+                163
+            ],
+            "col_range": [
+                142,
+                182
+            ],
+            "max_radial_distance_m": 966.0745312862771,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "9830A90CE7A5BAFB776FC4994CC3648B9549A1BAF9E9F34190337D0A518E1234",
+                "burned_mask_180min.tif": "B63E9F4128BEA916BFBA2FA3D8E4B1210F3A3E718CA5B15A87862B113286825C",
+                "perimeter_180min.geojson": "074DCA2A15AA5D47B8AFC11F84429456ADE57D54768647322C1BF538B2EF504F",
+                "run_metadata.json": "1AD395014376E8140FCEAC8541293F910331141CDCB9E1632F016F786E6ECAE7"
+            }
+        },
+        "case_06_wind_slope_cross_90deg": {
+            "case_id": "case_06_wind_slope_cross_90deg",
+            "role": "WIND_SLOPE_CROSSWIND_90",
+            "head_ros_m_min": 4.748397692288242,
+            "preflight_head_ros_m_min": 4.748398,
+            "heading_deg": 63.9892,
+            "arrival_cells": 773,
+            "arrival_area_ha": 69.57,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.92938232421875,
+            "row_range": [
+                131,
+                160
+            ],
+            "col_range": [
+                143,
+                175
+            ],
+            "max_radial_distance_m": 845.3401682163222,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "116352BC205B0850CF4157632612F729490816FB81A55D891F2156818AA8F493",
+                "burned_mask_180min.tif": "9AC927FD6AACEDD70AA295EA1786FD1AAFC0635F9598DAF4C8B78715C4ADE5A5",
+                "perimeter_180min.geojson": "B973CC3FE15F0E21D07FA42B54EC26C990AB5F277DB84714A8027CA0F7281264",
+                "run_metadata.json": "47F63D4D5B52793785D10399F4D808D8BFA08DB63F88D2B8881B0D25F92949AE"
+            }
+        },
+        "case_07_wind_slope_oblique_135deg": {
+            "case_id": "case_07_wind_slope_oblique_135deg",
+            "role": "WIND_SLOPE_OBLIQUE_135",
+            "head_ros_m_min": 3.5647876367669555,
+            "preflight_head_ros_m_min": 3.564788,
+            "heading_deg": 117.7811,
+            "arrival_cells": 476,
+            "arrival_area_ha": 42.839999999999996,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.9588165283203,
+            "row_range": [
+                142,
+                165
+            ],
+            "col_range": [
+                144,
+                169
+            ],
+            "max_radial_distance_m": 630.7138812488591,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "373116967DB2B2D524BB070CFF113C8087994E9018C5599C4807214FD9B58CE1",
+                "burned_mask_180min.tif": "919DBF48F301DE1EBCAC770CF1878BE2B87672D49F4A4D4A00E0D4D09E829F70",
+                "perimeter_180min.geojson": "267E94EA005230779E1DD2C77243FC77C93838814ABB208D570770F3341BF7D4",
+                "run_metadata.json": "106097AB439A56964D0E41B61A20D95A7A1E4E27DCA46A7DC312F84A0A70776C"
+            }
+        },
+        "case_08_wind_slope_opposed_180deg": {
+            "case_id": "case_08_wind_slope_opposed_180deg",
+            "role": "WIND_SLOPE_OPPOSED_180",
+            "head_ros_m_min": 2.839365894694968,
+            "preflight_head_ros_m_min": 2.839366,
+            "heading_deg": 90.0,
+            "arrival_cells": 331,
+            "arrival_area_ha": 29.79,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.61756896972656,
+            "row_range": [
+                141,
+                159
+            ],
+            "col_range": [
+                145,
+                167
+            ],
+            "max_radial_distance_m": 510.0,
+            "border_contacts": 0,
+            "mask_parity": true,
+            "output_hashes": {
+                "arrival_time_min.tif": "0DFD2F0496EB0D02AB90D0F9825D50416E3A9E8D23847301B8B0B4A906B4E827",
+                "burned_mask_180min.tif": "CC55D5FAFDB6915150FE8A9A864092698B3C53A3E6514D9A8D504AAA7859C216",
+                "perimeter_180min.geojson": "ED42D26EBD3C79FFB848A4F4AE11F64DFEBCC2F59C2959689E6491D009D79C07",
+                "run_metadata.json": "7E7EEC42953D34171BC14242E015DAADC06D46B6C939893EFF176A64F161A58D"
+            }
+        }
+    }
+}

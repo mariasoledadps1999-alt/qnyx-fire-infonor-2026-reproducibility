@@ -1,0 +1,43 @@
+{
+  "benchmark_id": "QNYX-BENCH-006",
+  "case_id": "case_01_control_flat_calm",
+  "outputs": {
+    "basic_rate_of_spread_m_min.tif": {
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/basic_rate_of_spread_m_min.tif",
+      "semantic_role": "LOCAL_BASIC_ROS",
+      "sha256": "623D071ACB7959ACF7E1A2D3FC3039495ADD4FBFF4C6A159944AC7DB7CB62F46",
+      "size_bytes": 3392,
+      "units": "m/min"
+    },
+    "midflame_windspeed_m_s.tif": {
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/midflame_windspeed_m_s.tif",
+      "semantic_role": "LOCAL_MIDFLAME_WIND",
+      "sha256": "A472DD38A683AC76E833E5491911D8C0108354C23E0A2A8317E6B3D6DB31878E",
+      "size_bytes": 3038,
+      "units": "m/s"
+    },
+    "mtt_arrival_time_min.tif": {
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/mtt_arrival_time_min.tif",
+      "semantic_role": "MTT_ARRIVAL_TIME",
+      "sha256": "709C188203306A872D73ABDEFD733AD4C17B91B0082A273070D4BF6A6402CA7D",
+      "size_bytes": 3996,
+      "units": "min"
+    },
+    "mtt_ros_m_min.tif": {
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/mtt_ros_m_min.tif",
+      "semantic_role": "MTT_PATH_ROS",
+      "sha256": "92BE9D79494F99D48EB80842E1D913B50B7F3BB31D006117D34D0E9D628BB29B",
+      "size_bytes": 3466,
+      "units": "m/min"
+    },
+    "run_log.txt": {
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/run_log.txt",
+      "semantic_role": "RUN_LOG",
+      "sha256": "41838AE3F0323584FBDBE9FAC7AE6276697BA5B191A51D018487EE8D3CD9810B",
+      "size_bytes": 1237,
+      "units": "text/plain"
+    }
+  },
+  "run_name": "BENCH006_CASE01_FLAT_CALM",
+  "total_outputs": 5
+}

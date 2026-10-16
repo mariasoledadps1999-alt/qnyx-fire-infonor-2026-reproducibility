@@ -1,0 +1,10 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Max Spread Direction</Description>
+    <UnitType>Degrees</UnitType>
+    <Metadata>
+      <MDI key="RepresentationType">THEMATIC</MDI>
+      <MDI key="UnitOfMeasure">Degrees</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

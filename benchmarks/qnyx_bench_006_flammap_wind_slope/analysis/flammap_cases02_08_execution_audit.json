@@ -1,0 +1,256 @@
+{
+    "benchmark_id": "QNYX-BENCH-006",
+    "phase": "5.4C-3",
+    "overall_execution_status": "FLAMMAP_CASES01_08_EXECUTION_COMPLETE",
+    "flammap_version": "6.2.45.0",
+    "total_cases_audited": 7,
+    "case02_recheck_audit": {
+        "case_id": "case_02_control_pure_wind_bench002",
+        "status": "FULL_HORIZON_RECHECK_PROMOTED",
+        "initial_spatial_classification": "INITIAL_INCOMPLETE_SPATIAL_OUTPUT",
+        "recheck_spatial_classification": "VALID_FULL_HORIZON_SPATIAL_OUTPUT",
+        "initial_max_arrival_min": 94.6817626953125,
+        "initial_cells": 204,
+        "promoted_max_arrival_min": 179.78501892089844,
+        "promoted_cells": 884,
+        "promoted_area_ha": 79.56,
+        "common_cells": 204,
+        "new_cells": 680,
+        "initial_mask_subset_of_recheck": true,
+        "max_arrival_diff_common_cells": 0.0,
+        "border_contacts": 0,
+        "promoted_arrival_sha256": "DE1674512CD0EBDDCCC9AF3C853F1A8620676D370E314B8BB67B47CDF5C88A39",
+        "promoted_mtt_ros_sha256": "95B088C36540EFFCEAAC2270CD48CF7B50325C18A752327BDAD53DC979ADE6EB"
+    },
+    "case06_recheck_audit": {
+        "case_id": "case_06_wind_slope_cross_90deg",
+        "status": "FULL_HORIZON_RECHECK_PROMOTED",
+        "initial_spatial_classification": "INITIAL_INCOMPLETE_SPATIAL_OUTPUT",
+        "recheck_spatial_classification": "VALID_FULL_HORIZON_SPATIAL_OUTPUT",
+        "initial_max_arrival_min": 93.11164855957031,
+        "initial_cells": 213,
+        "promoted_max_arrival_min": 179.98641967773438,
+        "promoted_cells": 920,
+        "promoted_area_ha": 82.8,
+        "common_cells": 213,
+        "new_cells": 707,
+        "initial_mask_subset_of_recheck": true,
+        "max_arrival_diff_common_cells": 0.0,
+        "border_contacts": 0,
+        "promoted_arrival_sha256": "AEB0E8C7D59CF6433FB3B7EFB2BEFA708BA43C937F193FF4C259AD55BC0AB1B7",
+        "promoted_mtt_ros_sha256": "48E0A4A01E095019E462AB16B9D4EAA1AA53AB255ACBF73780D784994AD69B9C"
+    },
+    "case07_provenance_correction": {
+        "case_id": "case_07_wind_slope_oblique_135deg",
+        "official_mtt_ros_file": "mtt_ros_m_min.tif",
+        "official_mtt_ros_provenance": "DERIVED_UNIT_CONVERSION",
+        "official_mtt_ros_sha256": "B0BF13F7D5C3ED18198D75A55AAFCD8F5B0FECCCEE7405730C895CBFED8A4BD2",
+        "reconstructed_file": "mtt_ros_ch_h_reconstructed_from_m_min.tif",
+        "reconstructed_role": "MTT_PATH_ROS_RECONSTRUCTED",
+        "reconstructed_provenance": "DERIVED_RECONSTRUCTION",
+        "reconstructed_sha256": "9B4BD8090C8330EEAC6ECA257C959ED8A90EE6759E3FDB5AE7BCDFB847648B1C",
+        "historical_original_observed_sha256": "197A78BC5F791EF5101903887409227EC6D7CB38F126DA5CD5B140F66D852E9F",
+        "historical_original_min_pos_ch_h": 3.3454535007476807,
+        "historical_original_max_pos_ch_h": 10.592902183532715,
+        "historical_status": "ORIGINAL_RAW_FILE_NOT_CURRENTLY_PRESENT"
+    },
+    "cases_audit": {
+        "case_02_control_pure_wind_bench002": {
+            "case_id": "case_02_control_pure_wind_bench002",
+            "run_name": "BENCH006_CASE02_FLAT_PURE_WIND",
+            "landscape_lcp": "bench006_flat.lcp",
+            "basic_ros_m_min": 4.390194892883301,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 90.0,
+            "arrival_cells": 884,
+            "arrival_area_ha": 79.56,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.78501892089844,
+            "row_min": 135,
+            "row_max": 166,
+            "col_min": 141,
+            "col_max": 176,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.2193349599838257,
+            "mtt_ros_max_positive_m_min": 4.386771202087402,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "FULL_HORIZON_RECHECK_PROMOTED"
+        },
+        "case_03_control_pure_slope_10deg": {
+            "case_id": "case_03_control_pure_slope_10deg",
+            "run_name": "BENCH006_CASE03_PURE_SLOPE_10DEG",
+            "landscape_lcp": "bench006_slope10_up_east.lcp",
+            "basic_ros_m_min": 2.762868642807007,
+            "midflame_wind_m_s": 0.0,
+            "max_spread_dir_deg": 90.0,
+            "arrival_cells": 422,
+            "arrival_area_ha": 37.98,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.30880737304688,
+            "row_min": 140,
+            "row_max": 161,
+            "col_min": 143,
+            "col_max": 166,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 0.9250189065933228,
+            "mtt_ros_max_positive_m_min": 2.7593750953674316,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "DIRECT_OFFICIAL_RUN"
+        },
+        "case_04_wind_slope_aligned_0deg": {
+            "case_id": "case_04_wind_slope_aligned_0deg",
+            "run_name": "BENCH006_CASE04_WIND_SLOPE_ALIGNED",
+            "landscape_lcp": "bench006_slope10_up_east.lcp",
+            "basic_ros_m_min": 5.941049575805664,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 90.0,
+            "arrival_cells": 1188,
+            "arrival_area_ha": 106.92,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.7637939453125,
+            "row_min": 134,
+            "row_max": 167,
+            "col_min": 142,
+            "col_max": 185,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.1047133207321167,
+            "mtt_ros_max_positive_m_min": 5.935007095336914,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "DIRECT_OFFICIAL_RUN"
+        },
+        "case_05_wind_slope_oblique_45deg": {
+            "case_id": "case_05_wind_slope_oblique_45deg",
+            "run_name": "BENCH006_CASE05_WIND_SLOPE_OBLIQUE45",
+            "landscape_lcp": "bench006_slope10_up_ne45.lcp",
+            "basic_ros_m_min": 5.631171226501465,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 75.30630493164062,
+            "arrival_cells": 1115,
+            "arrival_area_ha": 100.35,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.9567108154297,
+            "row_min": 131,
+            "row_max": 164,
+            "col_min": 142,
+            "col_max": 182,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.0633541345596313,
+            "mtt_ros_max_positive_m_min": 5.6278204917907715,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "DIRECT_OFFICIAL_RUN"
+        },
+        "case_06_wind_slope_cross_90deg": {
+            "case_id": "case_06_wind_slope_cross_90deg",
+            "run_name": "BENCH006_CASE06_WIND_SLOPE_CROSS90",
+            "landscape_lcp": "bench006_slope10_up_north.lcp",
+            "basic_ros_m_min": 4.748347282409668,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 63.989044189453125,
+            "arrival_cells": 920,
+            "arrival_area_ha": 82.8,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.98641967773438,
+            "row_min": 131,
+            "row_max": 162,
+            "col_min": 141,
+            "col_max": 176,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.0744987726211548,
+            "mtt_ros_max_positive_m_min": 4.7466816902160645,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "FULL_HORIZON_RECHECK_PROMOTED"
+        },
+        "case_07_wind_slope_oblique_135deg": {
+            "case_id": "case_07_wind_slope_oblique_135deg",
+            "run_name": "BENCH006_CASE07_WIND_SLOPE_OBLIQUE135",
+            "landscape_lcp": "bench006_slope10_up_sw225.lcp",
+            "basic_ros_m_min": 3.553435802459717,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 117.25581359863281,
+            "arrival_cells": 678,
+            "arrival_area_ha": 61.02,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.54376220703125,
+            "row_min": 140,
+            "row_max": 167,
+            "col_min": 141,
+            "col_max": 170,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.121677279472351,
+            "mtt_ros_max_positive_m_min": 3.551631212234497,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "DERIVED_UNIT_CONVERSION_MTT_ROS"
+        },
+        "case_08_wind_slope_opposed_180deg": {
+            "case_id": "case_08_wind_slope_opposed_180deg",
+            "run_name": "BENCH006_CASE08_WIND_SLOPE_OPPOSED180",
+            "landscape_lcp": "bench006_slope10_up_west.lcp",
+            "basic_ros_m_min": 2.8393404483795166,
+            "midflame_wind_m_s": 0.810649037361145,
+            "max_spread_dir_deg": 90.0,
+            "arrival_cells": 574,
+            "arrival_area_ha": 51.66,
+            "arrival_min_min": 0.0,
+            "arrival_max_min": 179.46800231933594,
+            "row_min": 138,
+            "row_max": 163,
+            "col_min": 140,
+            "col_max": 166,
+            "border_contacts": 0,
+            "mtt_ros_min_positive_m_min": 1.3081163167953491,
+            "mtt_ros_max_positive_m_min": 2.8378803730010986,
+            "arrival_ros_mask_equal": true,
+            "execution_note": "DIRECT_OFFICIAL_RUN"
+        }
+    },
+    "validation_gates": {
+        "CASES02_08_PROJECT_ARTIFACTS_PASS": {
+            "status": "PASS",
+            "description": "Los 7 archivos .fmp y 7 .fzp de Case 02 a 08 existen con hashes exactos."
+        },
+        "CASES02_08_LOCAL_RASTERS_METADATA_PASS": {
+            "status": "PASS",
+            "description": "Todos los rasteres locales Basic ROS, Midflame Wind y Direction coinciden con el contrato oficial 301x301 EPSG:32719."
+        },
+        "CASES02_08_MTT_ARRIVAL_METADATA_PASS": {
+            "status": "PASS",
+            "description": "Todos los rasteres MTT Arrival Time coinciden con el contrato oficial 301x301 EPSG:32719 e ignici\u00f3n central = 0.0 min."
+        },
+        "CASES02_08_MTT_ROS_METADATA_PASS": {
+            "status": "PASS",
+            "description": "Todos los rasteres MTT ROS coinciden con el contrato oficial 301x301 EPSG:32719."
+        },
+        "CASES02_08_MTT_MASK_PARITY_PASS": {
+            "status": "PASS",
+            "description": "Paridad 100% exacta de m\u00e1scaras entre MTT ROS y MTT Arrival en los 7 casos."
+        },
+        "CASES02_08_DOMAIN_CLIPPING_PASS": {
+            "status": "PASS",
+            "description": "Cero contactos de borde en el dominio a lo largo de los 7 casos."
+        },
+        "CASE02_FULL_HORIZON_RECHECK_PASS": {
+            "status": "PASS",
+            "description": "Recheck de Case 02 alcanza el horizonte completo de 179.79 min con 884 celdas."
+        },
+        "CASE02_INITIAL_SUBSET_CONSISTENCY_PASS": {
+            "status": "PASS",
+            "description": "M\u00e1scara inicial de Case 02 es subconjunto estricto del recheck con diferencia 0.0 en celdas comunes."
+        },
+        "CASE06_FULL_HORIZON_RECHECK_PASS": {
+            "status": "PASS",
+            "description": "Recheck de Case 06 alcanza el horizonte completo de 179.99 min con 920 celdas."
+        },
+        "CASE06_INITIAL_SUBSET_CONSISTENCY_PASS": {
+            "status": "PASS",
+            "description": "M\u00e1scara inicial de Case 06 es subconjunto estricto del recheck con diferencia 0.0 en celdas comunes."
+        },
+        "CASE07_MTT_ROS_PROVENANCE_CORRECTED_PASS": {
+            "status": "PASS",
+            "description": "Correcci\u00f3n de procedencia de Case 07 completada (DERIVED_UNIT_CONVERSION y DERIVED_RECONSTRUCTION)."
+        },
+        "FLAMMAP_CASES01_08_EXECUTION_COMPLETE": {
+            "status": "PASS",
+            "description": "Las 8 ejecuciones oficiales de FlamMap completadas y auditadas a horizonte completo."
+        }
+    }
+}

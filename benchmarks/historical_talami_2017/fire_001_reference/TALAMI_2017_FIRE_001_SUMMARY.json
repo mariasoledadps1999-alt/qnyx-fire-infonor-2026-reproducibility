@@ -1,0 +1,323 @@
+{
+  "run_metadata": {
+    "scientific_run_id": "QNYX-FIRE-TALAMI-001",
+    "scenario_id": "TALAMI_2017",
+    "stage": "fire",
+    "mode": "benchmark",
+    "timestamp": "2026-09-26T21:45:39.304843+00:00",
+    "target": "ENGINE_INTEGRATION_VERIFICATION",
+    "historical_validation_status": "BLOCKED_PENDING_HUMAN_REVIEW",
+    "conaf_comparison_prohibited": true
+  },
+  "temporal_policy": {
+    "reference_integration_start_utc": "2017-01-14T18:00:00Z",
+    "reference_integration_start_clt": "2017-01-14 15:00 CLT",
+    "start_time_status": "SCENARIO_HYPOTHESIS",
+    "historical_truth": false,
+    "simulation_start_utc": "2017-01-14T18:00:00Z",
+    "simulation_end_utc": "2017-01-15T06:00:00+00:00",
+    "simulation_horizon_hours": 12.0,
+    "simulation_horizon_minutes": 720.0
+  },
+  "fire_grid_contract": {
+    "shape": [
+      640,
+      982
+    ],
+    "resolution_m": 30.0,
+    "crs": "EPSG:32719",
+    "total_domain_cells": 628480,
+    "total_domain_area_ha": 56563.2
+  },
+  "ignition": {
+    "utm_x": 316425.0,
+    "utm_y": 6230260.0,
+    "ignition_row": 215,
+    "ignition_col": 555,
+    "fuel_code_at_ignition": 101,
+    "fuel_name": "Short, Sparse Dry Climate Grass",
+    "burnable_status": true,
+    "dynamic_status": true
+  },
+  "physics_contracts": {
+    "propagation_branch": "CANONICAL_ADVANCED_ROTHERMEL",
+    "fuel_model_catalog": "SCOTT_BURGAN_STANDARD_FUEL",
+    "dead_fuel_moisture_pipeline": "NELSON_NFDRS4_CANONICAL",
+    "live_fuel_moisture": {
+      "live_herbaceous": 0.6,
+      "live_woody": 0.9,
+      "provenance": "UNVALIDATED_SCENARIO_ASSUMPTION",
+      "purpose": "ENGINE_INTEGRATION_REFERENCE_ONLY"
+    },
+    "wind_adjustment_factor": {
+      "waf_value": 0.4,
+      "provenance": "UNVALIDATED_SCENARIO_ASSUMPTION"
+    },
+    "known_limitations": [
+      "TIME_DEPENDENT_REACTIVATION_LIMITATION"
+    ],
+    "reactivation_limitation_status": {
+      "limitation": "TIME_DEPENDENT_REACTIVATION_LIMITATION",
+      "REACTIVATION_FAILURE_OBSERVED_IN_FIRE_TALAMI_001": false
+    }
+  },
+  "performance": {
+    "runtime_seconds": 3.2517,
+    "cells_processed": 628480,
+    "number_ros_evaluations": 117520,
+    "ros_cap_hit_count": 0,
+    "queue_events": 11855,
+    "termination_reason": "TIME_HORIZON_REACHED"
+  },
+  "burned_results": {
+    "burned_cells": 14589,
+    "burned_area_ha": 1313.01,
+    "min_ros_m_min": 0.11350257149934347,
+    "mean_ros_m_min": 3.265110158772471,
+    "p95_ros_m_min": 9.533417346766608,
+    "max_ros_m_min": 23.79117389330727,
+    "mean_intensity_kw_m": 1940.57,
+    "max_intensity_kw_m": 9373.27,
+    "mean_flame_length_m": 2.33,
+    "max_flame_length_m": 5.2
+  },
+  "dead_fmc_ranges": {
+    "dead_1h": {
+      "min": 0.05858,
+      "mean": 0.08226,
+      "max": 0.12187
+    },
+    "dead_10h": {
+      "min": 0.06493,
+      "mean": 0.07779,
+      "max": 0.10077
+    },
+    "dead_100h": {
+      "min": 0.08856,
+      "mean": 0.09462,
+      "max": 0.10256
+    }
+  },
+  "hourly_diagnostics": [
+    {
+      "hour": 1,
+      "simulation_time_min": 60.0,
+      "burned_cells": 10,
+      "burned_area_ha": 0.9,
+      "active_front_cells": 9,
+      "mean_front_ros_m_min": 1.2473,
+      "mean_dead1_fmc": 0.07112,
+      "mean_dead10_fmc": 0.08031,
+      "mean_dead100_fmc": 0.09713,
+      "wind_speed_ms": 2.57,
+      "wind_direction_deg": 256.1
+    },
+    {
+      "hour": 2,
+      "simulation_time_min": 120.0,
+      "burned_cells": 40,
+      "burned_area_ha": 3.6,
+      "active_front_cells": 30,
+      "mean_front_ros_m_min": 1.2618,
+      "mean_dead1_fmc": 0.07203,
+      "mean_dead10_fmc": 0.08036,
+      "mean_dead100_fmc": 0.09713,
+      "wind_speed_ms": 2.7,
+      "wind_direction_deg": 258.64
+    },
+    {
+      "hour": 3,
+      "simulation_time_min": 180.0,
+      "burned_cells": 460,
+      "burned_area_ha": 41.4,
+      "active_front_cells": 420,
+      "mean_front_ros_m_min": 9.1602,
+      "mean_dead1_fmc": 0.06274,
+      "mean_dead10_fmc": 0.07113,
+      "mean_dead100_fmc": 0.08957,
+      "wind_speed_ms": 2.93,
+      "wind_direction_deg": 259.33
+    },
+    {
+      "hour": 4,
+      "simulation_time_min": 240.0,
+      "burned_cells": 1424,
+      "burned_area_ha": 128.16,
+      "active_front_cells": 964,
+      "mean_front_ros_m_min": 8.6947,
+      "mean_dead1_fmc": 0.05858,
+      "mean_dead10_fmc": 0.0669,
+      "mean_dead100_fmc": 0.08868,
+      "wind_speed_ms": 2.83,
+      "wind_direction_deg": 255.3
+    },
+    {
+      "hour": 5,
+      "simulation_time_min": 300.0,
+      "burned_cells": 3044,
+      "burned_area_ha": 273.96,
+      "active_front_cells": 1620,
+      "mean_front_ros_m_min": 6.9269,
+      "mean_dead1_fmc": 0.05917,
+      "mean_dead10_fmc": 0.06493,
+      "mean_dead100_fmc": 0.08856,
+      "wind_speed_ms": 2.27,
+      "wind_direction_deg": 248.98
+    },
+    {
+      "hour": 6,
+      "simulation_time_min": 360.0,
+      "burned_cells": 5400,
+      "burned_area_ha": 486.0,
+      "active_front_cells": 2356,
+      "mean_front_ros_m_min": 8.068,
+      "mean_dead1_fmc": 0.06561,
+      "mean_dead10_fmc": 0.06554,
+      "mean_dead100_fmc": 0.0897,
+      "wind_speed_ms": 1.84,
+      "wind_direction_deg": 247.55
+    },
+    {
+      "hour": 7,
+      "simulation_time_min": 420.0,
+      "burned_cells": 7277,
+      "burned_area_ha": 654.93,
+      "active_front_cells": 1877,
+      "mean_front_ros_m_min": 4.4847,
+      "mean_dead1_fmc": 0.0755,
+      "mean_dead10_fmc": 0.06911,
+      "mean_dead100_fmc": 0.09215,
+      "wind_speed_ms": 1.35,
+      "wind_direction_deg": 244.38
+    },
+    {
+      "hour": 8,
+      "simulation_time_min": 480.0,
+      "burned_cells": 9114,
+      "burned_area_ha": 820.26,
+      "active_front_cells": 1837,
+      "mean_front_ros_m_min": 3.7908,
+      "mean_dead1_fmc": 0.08562,
+      "mean_dead10_fmc": 0.07422,
+      "mean_dead100_fmc": 0.09456,
+      "wind_speed_ms": 1.01,
+      "wind_direction_deg": 243.69
+    },
+    {
+      "hour": 9,
+      "simulation_time_min": 540.0,
+      "burned_cells": 10752,
+      "burned_area_ha": 967.68,
+      "active_front_cells": 1638,
+      "mean_front_ros_m_min": 3.1032,
+      "mean_dead1_fmc": 0.09487,
+      "mean_dead10_fmc": 0.08005,
+      "mean_dead100_fmc": 0.09627,
+      "wind_speed_ms": 0.97,
+      "wind_direction_deg": 244.66
+    },
+    {
+      "hour": 10,
+      "simulation_time_min": 600.0,
+      "burned_cells": 12306,
+      "burned_area_ha": 1107.54,
+      "active_front_cells": 1554,
+      "mean_front_ros_m_min": 2.9198,
+      "mean_dead1_fmc": 0.10382,
+      "mean_dead10_fmc": 0.08625,
+      "mean_dead100_fmc": 0.09822,
+      "wind_speed_ms": 0.78,
+      "wind_direction_deg": 252.6
+    },
+    {
+      "hour": 11,
+      "simulation_time_min": 660.0,
+      "burned_cells": 13592,
+      "burned_area_ha": 1223.28,
+      "active_front_cells": 1286,
+      "mean_front_ros_m_min": 2.2694,
+      "mean_dead1_fmc": 0.1162,
+      "mean_dead10_fmc": 0.09387,
+      "mean_dead100_fmc": 0.10096,
+      "wind_speed_ms": 0.58,
+      "wind_direction_deg": 267.82
+    },
+    {
+      "hour": 12,
+      "simulation_time_min": 720.0,
+      "burned_cells": 14589,
+      "burned_area_ha": 1313.01,
+      "active_front_cells": 997,
+      "mean_front_ros_m_min": 1.5086,
+      "mean_dead1_fmc": 0.12187,
+      "mean_dead10_fmc": 0.10077,
+      "mean_dead100_fmc": 0.10256,
+      "wind_speed_ms": 0.4,
+      "wind_direction_deg": 275.89
+    }
+  ],
+  "integration_invariants": {
+    "ignition_arrival_time_is_zero": true,
+    "all_finite_arrival_times_non_negative": true,
+    "no_burned_nonburnable_cells": true,
+    "no_nan_in_burned_outputs": true,
+    "no_negative_ros": true,
+    "no_negative_intensity": true,
+    "no_negative_flame_length": true,
+    "burned_cells_within_domain": true,
+    "simulation_end_within_weather_coverage": true,
+    "fuel_lookup_coverage_100pct": true
+  },
+  "outputs": {
+    "TALAMI_2017_FIRE_001_ARRIVAL_TIME.tif": {
+      "path": "runs/TALAMI_2017_FIRE_20260926_184524/outputs/TALAMI_2017_FIRE_001_ARRIVAL_TIME.tif",
+      "sha256": "f7ba3b3f557790e29402b586dce408ab79aa70c5b90786b692538cdfe25c92b1",
+      "size_bytes": 2516218,
+      "shape": [
+        640,
+        982
+      ],
+      "dtype": "float32"
+    },
+    "TALAMI_2017_FIRE_001_BURNED_MASK.tif": {
+      "path": "runs/TALAMI_2017_FIRE_20260926_184524/outputs/TALAMI_2017_FIRE_001_BURNED_MASK.tif",
+      "sha256": "42507c96459a7387215c9827cffa6efea95595eaad6ec72e0ca9e5aabd160f61",
+      "size_bytes": 629332,
+      "shape": [
+        640,
+        982
+      ],
+      "dtype": "uint8"
+    },
+    "TALAMI_2017_FIRE_001_ROS.tif": {
+      "path": "runs/TALAMI_2017_FIRE_20260926_184524/outputs/TALAMI_2017_FIRE_001_ROS.tif",
+      "sha256": "2861c9c525639b0d8b5aa46fb08c0ffc25d7461841b6153ade2217664b68c555",
+      "size_bytes": 2516218,
+      "shape": [
+        640,
+        982
+      ],
+      "dtype": "float32"
+    },
+    "TALAMI_2017_FIRE_001_INTENSITY.tif": {
+      "path": "runs/TALAMI_2017_FIRE_20260926_184524/outputs/TALAMI_2017_FIRE_001_INTENSITY.tif",
+      "sha256": "58b8f4eaec6b1a8eb7203c43f56ec7980b7cd74a094cd38fc7e8eb82aec0ac8d",
+      "size_bytes": 2516218,
+      "shape": [
+        640,
+        982
+      ],
+      "dtype": "float32"
+    },
+    "TALAMI_2017_FIRE_001_FLAME_LENGTH.tif": {
+      "path": "runs/TALAMI_2017_FIRE_20260926_184524/outputs/TALAMI_2017_FIRE_001_FLAME_LENGTH.tif",
+      "sha256": "d0410d8824d9b4548819d718e4d0c9f2ab2913bafc98ccd24e137ad5e9ed58a2",
+      "size_bytes": 2516218,
+      "shape": [
+        640,
+        982
+      ],
+      "dtype": "float32"
+    }
+  }
+}

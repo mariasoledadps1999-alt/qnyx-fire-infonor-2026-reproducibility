@@ -1,0 +1,111 @@
+{
+  "stage": "fuel_physics",
+  "task": "100m_to_30m_grid_bridge",
+  "resampling_method": "nearest_neighbor_categorical",
+  "source_100m": {
+    "path": "benchmarks/historical_talami_2017/chile_fuel_reference/TALAMI_2017_FUEL_MODEL_A_CANONICAL.tif",
+    "sha256": "e2081fafd89a061cc8f63b5ea22a9bc12a0bb90607dc7c73b18842453293e657",
+    "crs": "EPSG:32719",
+    "shape": [
+      193,
+      295
+    ],
+    "allowed_classes": [
+      93,
+      99,
+      101,
+      102,
+      123,
+      142,
+      145,
+      163,
+      165,
+      185,
+      189
+    ]
+  },
+  "target_30m": {
+    "path": "benchmarks/historical_talami_2017/chile_fuel_reference/TALAMI_2017_FUEL_MODEL_FIREGRID_30M.tif",
+    "sha256": "ae409217f5181cf23a4afae3057c6c2c61b46b3097849b07b2210a0926587f20",
+    "size_bytes": 30372,
+    "crs": "EPSG:32719",
+    "shape": [
+      640,
+      982
+    ],
+    "bounds": {
+      "left": 299760.0,
+      "bottom": 6217530.0,
+      "right": 329220.0,
+      "top": 6236730.0
+    },
+    "resolution": [
+      30.0,
+      30.0
+    ],
+    "total_cells": 628480,
+    "total_area_ha": 56563.2,
+    "ignition_cell": {
+      "row": 215,
+      "col": 555,
+      "fuel_code": 101
+    }
+  },
+  "distribution_30m": {
+    "93": {
+      "cell_count": 12633,
+      "pct": 2.0101,
+      "area_ha": 1136.97
+    },
+    "99": {
+      "cell_count": 14964,
+      "pct": 2.381,
+      "area_ha": 1346.76
+    },
+    "101": {
+      "cell_count": 21104,
+      "pct": 3.3579,
+      "area_ha": 1899.36
+    },
+    "102": {
+      "cell_count": 1728,
+      "pct": 0.2749,
+      "area_ha": 155.52
+    },
+    "123": {
+      "cell_count": 866,
+      "pct": 0.1378,
+      "area_ha": 77.94
+    },
+    "142": {
+      "cell_count": 3211,
+      "pct": 0.5109,
+      "area_ha": 288.99
+    },
+    "145": {
+      "cell_count": 275736,
+      "pct": 43.8735,
+      "area_ha": 24816.24
+    },
+    "163": {
+      "cell_count": 9,
+      "pct": 0.0014,
+      "area_ha": 0.81
+    },
+    "165": {
+      "cell_count": 279423,
+      "pct": 44.4601,
+      "area_ha": 25148.07
+    },
+    "185": {
+      "cell_count": 42,
+      "pct": 0.0067,
+      "area_ha": 3.78
+    },
+    "189": {
+      "cell_count": 18764,
+      "pct": 2.9856,
+      "area_ha": 1688.76
+    }
+  }
+}

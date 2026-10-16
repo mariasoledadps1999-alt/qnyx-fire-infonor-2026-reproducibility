@@ -1,0 +1,241 @@
+{
+  "baseline_commit": "e9660c38",
+  "baseline_tag": "phase-5.4b-bench-006-flammap-lcp-build",
+  "benchmark_id": "QNYX-BENCH-006",
+  "benchmark_name": "Controlled Q-NYX vs FlamMap Wind-Slope Interaction Comparison",
+  "case_id": "case_01_control_flat_calm",
+  "execution_classification": "FLAMMAP_CASE01_EXECUTION_STATUS = COMPLETED_AND_AUDITED",
+  "flammap_case01_execution_status": "COMPLETED_AND_AUDITED",
+  "flammap_version": "6.2.45.0",
+  "flammap_version_observed": "6.2.45.0",
+  "input_provenance": {
+    "crown_calculation_method": "ScottReinhardt",
+    "crown_execution_intent_note": "surface-fire-only remains the scientific execution intent. Do not use crown outputs as validation evidence.",
+    "foliar_moisture_pct": 100.0,
+    "fuel_moisture_file": "flammap/common/flame_benchmark.fms",
+    "fuel_moisture_sha256": "2B113A1A21786049EBEB2838690F8867E2D1F2AA391905F19446A9CC355F2319",
+    "fuel_moisture_values": {
+      "100h_pct": 10.0,
+      "10h_pct": 9.0,
+      "1h_pct": 8.0,
+      "live_herbaceous_pct": 100.0,
+      "live_woody_pct": 100.0
+    },
+    "ignition_file": "flammap/common/ignition_center.shp",
+    "ignition_sha256": "7EFBC54CA23CA039C3F0183331177835671ACC0C03D4F07EC5B3941BA6D35F7A",
+    "landscape_lcp_file": "flammap/landscapes/bench006_flat.lcp",
+    "landscape_lcp_sha256": "C07339506FD7007D6AB491B5831FF030403D7BBA594EE3C821FF032AD64E13B5",
+    "mtt_configuration": {
+      "lateral_search_depth": 6,
+      "max_simulation_time_min": 180.0,
+      "mtt_resolution_m": 30.0,
+      "selected_mtt_outputs": [
+        "MTT_ROS",
+        "MTT_ARRIVAL"
+      ],
+      "spot_delay": 0,
+      "spot_probability": 0.0,
+      "travel_path_interval_m": 500.0,
+      "vertical_search_depth": 4
+    },
+    "wind_direction_deg": 0.0,
+    "wind_speed_mph_at_20ft": 0.0
+  },
+  "landscape_file": "flammap/landscapes/bench006_flat.lcp",
+  "landscape_resolution_m": 30.0,
+  "output_artifacts": {
+    "basic_rate_of_spread": {
+      "center_cell_150_150_val": 1.2120143175125122,
+      "crs": "EPSG:32719",
+      "dtype": "float32",
+      "gates": {
+        "CASE01_BASIC_ROS_GRID_UNIFORM_PASS": "PASS",
+        "CASE01_LOCAL_BASIC_ROS_PASS": "PASS"
+      },
+      "grid_max": 1.2120143175125122,
+      "grid_min": 1.2120143175125122,
+      "is_grid_uniform": true,
+      "nodata": -9999.0,
+      "qnyx_local_reference_m_min": 1.21203124935,
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/basic_rate_of_spread_m_min.tif",
+      "relative_percent_difference": -0.001396980275626971,
+      "resolution_m": 30.0,
+      "semantic_role": "LOCAL_BASIC_ROS",
+      "sha256": "623D071ACB7959ACF7E1A2D3FC3039495ADD4FBFF4C6A159944AC7DB7CB62F46",
+      "shape": [
+        301,
+        301
+      ],
+      "signed_difference_flammap_minus_qnyx_m_min": -1.693183748785465e-05,
+      "size_bytes": 3392,
+      "units": "m/min",
+      "comparison_note": "Observed FlamMap-QNYX local ROS difference is approximately -0.001397%; no causal attribution is made."
+    },
+    "midflame_windspeed": {
+      "center_cell_150_150_val": 0.0,
+      "crs": "EPSG:32719",
+      "dtype": "float32",
+      "gate": "CASE01_MIDFLAME_WIND_ZERO_PASS",
+      "gate_status": "PASS",
+      "grid_max": 0.0,
+      "grid_min": 0.0,
+      "nodata": -9999.0,
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/midflame_windspeed_m_s.tif",
+      "resolution_m": 30.0,
+      "semantic_role": "LOCAL_MIDFLAME_WIND",
+      "sha256": "A472DD38A683AC76E833E5491911D8C0108354C23E0A2A8317E6B3D6DB31878E",
+      "shape": [
+        301,
+        301
+      ],
+      "size_bytes": 3038,
+      "units": "m/s"
+    },
+    "mtt_arrival_time": {
+      "burned_area_ha": 18.0,
+      "center_arrival_min": 0.0,
+      "col_max": 157,
+      "col_min": 142,
+      "crs": "EPSG:32719",
+      "dtype": "float32",
+      "gates": {
+        "CASE01_DOMAIN_CLIPPING_PASS": "PASS",
+        "CASE01_MTT_ARRIVAL_METADATA_PASS": "PASS",
+        "CASE01_MTT_HORIZON_PASS": "PASS",
+        "CASE01_MTT_IGNITION_ZERO_PASS": "PASS"
+      },
+      "max_valid_min": 178.49053955078125,
+      "maximum_cell_center_radial_distance_m": 258.0697580112788,
+      "min_valid_min": 0.0,
+      "nodata": -9999.0,
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/mtt_arrival_time_min.tif",
+      "row_max": 158,
+      "row_min": 143,
+      "semantic_role": "MTT_ARRIVAL_TIME",
+      "sha256": "709C188203306A872D73ABDEFD733AD4C17B91B0082A273070D4BF6A6402CA7D",
+      "shape": [
+        301,
+        301
+      ],
+      "size_bytes": 3996,
+      "transform": [
+        30.0,
+        0.0,
+        188850.0,
+        0.0,
+        -30.0,
+        6077580.0
+      ],
+      "units": "min",
+      "valid_border_contacts": 0,
+      "valid_cells": 200
+    },
+    "mtt_ros": {
+      "arrival_valid_cells": 200,
+      "arrival_valid_not_ros": 0,
+      "center_cell_150_150_val": 0.0,
+      "crs": "EPSG:32719",
+      "dtype": "float32",
+      "gates": {
+        "CASE01_MTT_ROS_ARRIVAL_MASK_PARITY_PASS": "PASS",
+        "CASE01_MTT_ROS_METADATA_PASS": "PASS"
+      },
+      "important_interpretation_notes": [
+        "MTT ROS is NOT the same quantity as the Basic local/head ROS.",
+        "Do not interpret the 0.909... minimum as a failure of the Rothermel local kernel.",
+        "Do not attribute the observed MTT spatial geometry to a single cause yet."
+      ],
+      "mask_equal_to_arrival": true,
+      "max_positive_m_min": 1.2120143175125122,
+      "min_positive_m_min": 0.9090107083320618,
+      "nodata": -9999.0,
+      "positive_cells": 199,
+      "relative_path": "flammap/case_01_control_flat_calm/outputs/mtt_ros_m_min.tif",
+      "ros_valid_not_arrival": 0,
+      "semantic_role": "MTT_PATH_ROS",
+      "sha256": "92BE9D79494F99D48EB80842E1D913B50B7F3BB31D006117D34D0E9D628BB29B",
+      "shape": [
+        301,
+        301
+      ],
+      "size_bytes": 3466,
+      "transform": [
+        30.0,
+        0.0,
+        188850.0,
+        0.0,
+        -30.0,
+        6077580.0
+      ],
+      "units": "m/min",
+      "valid_cells": 200
+    }
+  },
+  "phase": "5.4C-1",
+  "project_artifacts": {
+    "fmp_file": {
+      "relative_path": "flammap/projects/BENCH006_CASE01_FLAT_CALM.fmp",
+      "sha256": "0081607C65CD0FEE992F6700397D770CA3A968CF5B4F42A2B3EFA9E017585558",
+      "size_bytes": 4718
+    },
+    "fzp_file": {
+      "relative_path": "flammap/projects/BENCH006_CASE01_FLAT_CALM.fzp",
+      "sha256": "93F9C5E2A5301ABC1E928006CBDAAB8A47DB4FD0EE3D5A6ADE2CEF817CF1BDFB",
+      "size_bytes": 5529
+    }
+  },
+  "run_completed": "2026-08-18 11:03:03",
+  "run_log_artifact": {
+    "footer_verified": true,
+    "gate": "CASE01_RUN_LOG_ARTIFACT_PASS",
+    "gate_status": "PASS",
+    "header_verified": true,
+    "relative_path": "flammap/case_01_control_flat_calm/outputs/run_log.txt",
+    "sha256": "41838AE3F0323584FBDBE9FAC7AE6276697BA5B191A51D018487EE8D3CD9810B",
+    "size_bytes": 1237
+  },
+  "run_name": "BENCH006_CASE01_FLAT_CALM",
+  "run_time_seconds": 0.31,
+  "validation_gates": {
+    "CASE01_BASIC_ROS_GRID_UNIFORM_PASS": {
+      "description": "Basic ROS raster is strictly uniform (min=max=1.212014 m/min across 301x301).",
+      "status": "PASS"
+    },
+    "CASE01_DOMAIN_CLIPPING_PASS": {
+      "description": "Zero valid cells contact domain borders (row range 143-158, col range 142-157, max radial dist 258.07 m).",
+      "status": "PASS"
+    },
+    "CASE01_LOCAL_BASIC_ROS_PASS": {
+      "description": "FlamMap Basic ROS = 1.212014 m/min matches Q-NYX R0 = 1.212031 m/min (-0.0014% relative diff).",
+      "status": "PASS"
+    },
+    "CASE01_MIDFLAME_WIND_ZERO_PASS": {
+      "description": "Midflame wind speed raster is strictly 0.0 m/s.",
+      "status": "PASS"
+    },
+    "CASE01_MTT_ARRIVAL_METADATA_PASS": {
+      "description": "MTT arrival raster has exact shape 301x301, EPSG:32719 and official transform.",
+      "status": "PASS"
+    },
+    "CASE01_MTT_HORIZON_PASS": {
+      "description": "Maximum arrival time is 178.49 min <= 180 min horizon across 200 valid cells (18.0 ha).",
+      "status": "PASS"
+    },
+    "CASE01_MTT_IGNITION_ZERO_PASS": {
+      "description": "MTT arrival time at ignition center cell (150,150) is 0.0 min.",
+      "status": "PASS"
+    },
+    "CASE01_MTT_ROS_ARRIVAL_MASK_PARITY_PASS": {
+      "description": "MTT ROS valid mask equals MTT arrival mask (200 valid cells, 199 positive, 0 mismatch).",
+      "status": "PASS"
+    },
+    "CASE01_MTT_ROS_METADATA_PASS": {
+      "description": "MTT ROS raster has exact shape 301x301, EPSG:32719 and official transform.",
+      "status": "PASS"
+    },
+    "CASE01_RUN_LOG_ARTIFACT_PASS": {
+      "description": "Run log exact header, footer, size and SHA256 validated.",
+      "status": "PASS"
+    }
+  }
+}

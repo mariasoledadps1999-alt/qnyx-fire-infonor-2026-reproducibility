@@ -1,0 +1,72 @@
+{
+  "audit_id": "BENCH005_GEOSPATIAL_HERITAGE_AUDIT",
+  "bench005_characterization": {
+    "absolute_spatial_shift_vs_bench002": {
+      "delta_x_east_m": 1500.0,
+      "delta_y_north_m": -1500.0
+    },
+    "center_cell_150_150_coords": [
+      194865.0,
+      6071565.0
+    ],
+    "grid_classification": "LEGACY_SHIFTED_GRID (100% homogeneous across all 141 raster files)",
+    "ignition_semantics": "discrete grid cell indices row=150, col=150",
+    "input_transform": [
+      30.0,
+      0.0,
+      190350.0,
+      0.0,
+      -30.0,
+      6076080.0
+    ],
+    "result_transform": [
+      30.0,
+      0.0,
+      190350.0,
+      0.0,
+      -30.0,
+      6076080.0
+    ],
+    "total_geotiffs_audited": 141,
+    "total_json_files_audited": 147,
+    "total_vector_perimeters_audited": 21
+  },
+  "bench006_heritage_definition": {
+    "official_ignition_center": {
+      "col": 150,
+      "crs": "EPSG:32719",
+      "row": 150,
+      "x_utm": 193365.0,
+      "y_utm": 6073065.0
+    },
+    "official_reference_bounds": {
+      "bottom": 6068550.0,
+      "left": 188850.0,
+      "right": 197880.0,
+      "top": 6077580.0
+    },
+    "official_reference_transform": [
+      30.0,
+      0.0,
+      188850.0,
+      0.0,
+      -30.0,
+      6077580.0
+    ],
+    "physical_and_methodological_source": "QNYX-BENCH-005 (wind-slope interaction suite, angular matrix 0 deg - 180 deg)",
+    "spatial_grid_reference_source": "FLAMMAP-BENCH-002 / QNYX-BENCH-002"
+  },
+  "description": "Auditoria exhaustiva de herencia geoespacial entre BENCH-005 y BENCH-006",
+  "impact_assessment": {
+    "absolute_json_geospatial_metadata": "SHIFTED (presente en timeline.json y web_export.json; absent en manifests, configs y statistics)",
+    "absolute_raster_geospatial_placement": "SHIFTED",
+    "absolute_vector_geospatial_placement": "SHIFTED",
+    "arrival_times_and_burned_masks": "UNAFFECTED_BY_GLOBAL_TRANSLATION",
+    "cardinal_rotational_equivalence": "UNAFFECTED_BY_GLOBAL_TRANSLATION (CARDINAL_ROTATIONAL_EQUIVALENCE_PASS auditado sobre 5 pares cardinales)",
+    "internal_numerical_results": "UNAFFECTED_BY_GLOBAL_TRANSLATION",
+    "local_physics": "UNAFFECTED_BY_GLOBAL_TRANSLATION (Rothermel kernel es invariante bajo traslacion rigida)",
+    "pca_and_directional_metrics": "UNAFFECTED_BY_GLOBAL_TRANSLATION (calculado sobre desplazamientos relativos al nodo central 150,150)",
+    "propagation_kernel_description": "propagador de tiempo minimo tipo Dijkstra sobre un grafo raster discreto (proprietary raster Dijkstra minimum-arrival-time propagator)"
+  },
+  "status": "BENCH005_GEOSPATIAL_HERITAGE_CHARACTERIZED"
+}

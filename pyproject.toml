@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnyx-fire-infonor-2026-reproducibility"
+version = "1.0.0"
+description = "Artifact and Code Reproducibility Package for Q-NYX Fire (INFONOR 2026)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Q-NYX Fire Research Team" }
+]
+keywords = [
+    "wildfire",
+    "fire propagation",
+    "rothermel",
+    "nelson moisture",
+    "flammap",
+    "reproducibility",
+    "infonor"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "rasterio>=1.3.0",
+    "geopandas>=0.13.0",
+    "shapely>=2.0.0",
+    "pyproj>=3.5.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0",
+    "scikit-image>=0.21.0",
+    "matplotlib>=3.7.0",
+    "pyyaml>=6.0.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.3.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning"
+]

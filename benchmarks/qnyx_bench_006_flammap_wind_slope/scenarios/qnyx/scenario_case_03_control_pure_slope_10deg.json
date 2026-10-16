@@ -1,0 +1,49 @@
+{
+  "duration_minutes": 180,
+  "fuel_model_set": "ORIGINAL_13",
+  "id": "qnyx_bench_006_case_03_control_pure_slope_10deg",
+  "ignition": {
+    "col": 150,
+    "file": null,
+    "lat": null,
+    "lon": null,
+    "row": 150,
+    "status": "benchmark"
+  },
+  "initial_fuel_moisture": {
+    "dead_100h_fraction": 0.1,
+    "dead_10h_fraction": 0.09,
+    "dead_1h_fraction": 0.08,
+    "live_herbaceous_fraction": 1.0,
+    "live_woody_fraction": 1.0,
+    "status": "benchmark"
+  },
+  "output_interval_minutes": 30,
+  "pilot_area": "boundaries/pilot_area.geojson",
+  "propagation": {
+    "apply_partial_barrier_reduction": false,
+    "neighborhood_type": "stencil_16",
+    "rothermel_max_ros": null,
+    "wind_limit_policy": "rothermel_limit"
+  },
+  "rasters": {
+    "aspect": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_east/aspect.tif",
+    "barriers": "qnyx_bench_006_flammap_wind_slope/inputs/common/barriers.tif",
+    "elevation": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_east/elevation.tif",
+    "fuel_model": "qnyx_bench_006_flammap_wind_slope/inputs/common/fuel_model.tif",
+    "slope": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_east/slope.tif"
+  },
+  "spread_model": "rothermel",
+  "status": "benchmark",
+  "warning": "Benchmark oficial QNYX-BENCH-006: Control de pendiente pura de 10\u00b0 hacia el Este sin viento (slope=10\u00b0, upslope 90\u00b0 East, wind=0). Herencia BENCH-003.",
+  "weather": {
+    "file": null,
+    "midflame_wind_ms": 0.0,
+    "precipitation_mm": 0.0,
+    "relative_humidity_pct": 38.0,
+    "status": "benchmark",
+    "temperature_c": 24.0,
+    "wind_direction_deg": 0.0,
+    "wind_speed_ms": 0.0
+  }
+}

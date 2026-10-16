@@ -1,0 +1,222 @@
+{
+  "benchmark_id": "QNYX-BENCH-006",
+  "build_method": "MANUAL_FLAMMAP_GUI",
+  "common_container_properties": {
+    "cell_size_m": 30.0,
+    "columns": 301,
+    "crown_theme_values": {
+      "base_height_m": 0.0,
+      "bulk_density_kg_m3": 0.0,
+      "cover": 0,
+      "height_m": 0.0
+    },
+    "crs": "EPSG:32719",
+    "eight_theme_container": true,
+    "grid_source_reference": "FLAMMAP-BENCH-002 / QNYX-BENCH-002",
+    "lower_left_x": 188850.0,
+    "lower_left_y": 6068550.0,
+    "note": "Crown fuel themes are included as neutral layers required by the 8-theme LCP container format. The benchmark execution remains SURFACE FIRE ONLY.",
+    "rows": 301,
+    "surface_fire_execution_intent": true
+  },
+  "count_status": "SIX_LCP_COUNT_PASS",
+  "expected_lcp_count": 6,
+  "flammap_build_date_observed": "2025-08-28",
+  "flammap_version_expected": "6.2.45.0",
+  "flammap_version_match_status": "FLAMMAP_VERSION_MATCH_PASS",
+  "flammap_version_observed": "6.2.45.0",
+  "generation_application": "FlamMap 6.2.45.0",
+  "hash_audit_status": "LCP_HASH_AUDIT_PASS",
+  "landscapes": [
+    {
+      "aspect_downhill_deg": 0.0,
+      "cases_using_lcp": [
+        "case_01_control_flat_calm",
+        "case_02_control_pure_wind_bench002"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "100 - 100 m",
+      "filename": "bench006_flat.lcp",
+      "lcp_id": "LCP01_flat",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": true,
+      "manual_reopen_status": "PASS",
+      "relative_path": "flammap/landscapes/bench006_flat.lcp",
+      "rows": 301,
+      "sha256": "C07339506FD7007D6AB491B5831FF030403D7BBA594EE3C821FF032AD64E13B5",
+      "size_bytes": 1456932,
+      "slope_deg": 0.0,
+      "source_topography": "topo_flat_0deg",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 0.0
+    },
+    {
+      "aspect_downhill_deg": 270.0,
+      "cases_using_lcp": [
+        "case_03_control_pure_slope_10deg",
+        "case_04_wind_slope_aligned_0deg"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "3206 - 4793 m",
+      "filename": "bench006_slope10_up_east.lcp",
+      "lcp_id": "LCP02_slope10_up_east",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": false,
+      "manual_reopen_status": "NOT_INDIVIDUALLY_TESTED",
+      "relative_path": "flammap/landscapes/bench006_slope10_up_east.lcp",
+      "rows": 301,
+      "sha256": "AE711822225E51B60BFA191CBA80234A0EE89C01B4D17CDA30B39314F8744417",
+      "size_bytes": 1456932,
+      "slope_deg": 10.0,
+      "source_topography": "topo_slope_10deg_upslope_east",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 90.0
+    },
+    {
+      "aspect_downhill_deg": 225.0,
+      "cases_using_lcp": [
+        "case_05_wind_slope_oblique_45deg"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "2877 - 5122 m",
+      "filename": "bench006_slope10_up_ne45.lcp",
+      "lcp_id": "LCP03_slope10_up_ne45",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": false,
+      "manual_reopen_status": "NOT_INDIVIDUALLY_TESTED",
+      "relative_path": "flammap/landscapes/bench006_slope10_up_ne45.lcp",
+      "rows": 301,
+      "sha256": "48143B4EAED0073852DFEE26E90FB22531656C1685ED4BEAF6FD628A3EC6AB44",
+      "size_bytes": 1456932,
+      "slope_deg": 10.0,
+      "source_topography": "topo_slope_10deg_upslope_ne45",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 45.0
+    },
+    {
+      "aspect_downhill_deg": 180.0,
+      "cases_using_lcp": [
+        "case_06_wind_slope_cross_90deg"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "3206 - 4793 m",
+      "filename": "bench006_slope10_up_north.lcp",
+      "lcp_id": "LCP04_slope10_up_north",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": false,
+      "manual_reopen_status": "NOT_INDIVIDUALLY_TESTED",
+      "relative_path": "flammap/landscapes/bench006_slope10_up_north.lcp",
+      "rows": 301,
+      "sha256": "21F5E77CC6C8253A615F6C909FCFD861F2371A66A7BF448AC6A77FAFA6554D72",
+      "size_bytes": 1456932,
+      "slope_deg": 10.0,
+      "source_topography": "topo_slope_10deg_upslope_north",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 0.0
+    },
+    {
+      "aspect_downhill_deg": 45.0,
+      "cases_using_lcp": [
+        "case_07_wind_slope_oblique_135deg"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "2877 - 5122 m",
+      "filename": "bench006_slope10_up_sw225.lcp",
+      "lcp_id": "LCP05_slope10_up_sw225",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": false,
+      "manual_reopen_status": "NOT_INDIVIDUALLY_TESTED",
+      "relative_path": "flammap/landscapes/bench006_slope10_up_sw225.lcp",
+      "rows": 301,
+      "sha256": "38F511D2B3B6DEB9C1F1171053543DD533DFDCB00C725258F524071C7607201A",
+      "size_bytes": 1456932,
+      "slope_deg": 10.0,
+      "source_topography": "topo_slope_10deg_upslope_sw225",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 225.0
+    },
+    {
+      "aspect_downhill_deg": 90.0,
+      "cases_using_lcp": [
+        "case_08_wind_slope_opposed_180deg"
+      ],
+      "cell_size_m": 30.0,
+      "columns": 301,
+      "crown_theme_values": {
+        "canopy_base_height_m": 0.0,
+        "canopy_bulk_density_kg_m3": 0.0,
+        "cover_percent": 0,
+        "stand_height_m": 0.0
+      },
+      "crs": "EPSG:32719",
+      "eight_theme_container": true,
+      "elevation_range_displayed_flammap": "3206 - 4793 m",
+      "filename": "bench006_slope10_up_west.lcp",
+      "lcp_id": "LCP06_slope10_up_west",
+      "lower_left_x": 188850.0,
+      "lower_left_y": 6068550.0,
+      "manual_reopen_checked": false,
+      "manual_reopen_status": "NOT_INDIVIDUALLY_TESTED",
+      "relative_path": "flammap/landscapes/bench006_slope10_up_west.lcp",
+      "rows": 301,
+      "sha256": "1E2BF7936188FDD484EC125B98C6A630F36764B5D6543FECC9FCF169D7D6AFCE",
+      "size_bytes": 1456932,
+      "slope_deg": 10.0,
+      "source_topography": "topo_slope_10deg_upslope_west",
+      "surface_fire_execution_intent": true,
+      "upslope_deg": 270.0
+    }
+  ],
+  "lcp01_reopen_gate": "LCP01_REOPEN_PASS",
+  "lcp_count": 6
+}

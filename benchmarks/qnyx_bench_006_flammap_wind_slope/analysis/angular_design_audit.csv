@@ -1,0 +1,9 @@
+case_id,case_role,wind_towards_deg,upslope_deg,aspect_downslope_deg,designed_separation_deg,calculated_separation_deg,angular_match_exact,interaction_class
+case_01_control_flat_calm,EXTERNAL_FLAT_CALM_CONTROL,0.0,0.0,0.0,0.0,0.0,True,CALM_FLAT_CONTROL
+case_02_control_pure_wind_bench002,EXTERNAL_PURE_WIND_CONTROL,90.0,0.0,0.0,0.0,0.0,True,PURE_WIND_CONTROL
+case_03_control_pure_slope_10deg,PURE_SLOPE_CONTROL,0.0,90.0,270.0,0.0,0.0,True,PURE_SLOPE_CONTROL
+case_04_wind_slope_aligned_0deg,WIND_SLOPE_ALIGNED,90.0,90.0,270.0,0.0,0.0,True,ALIGNED_CONSTRUCTIVE
+case_05_wind_slope_oblique_45deg,WIND_SLOPE_OBLIQUE_45,90.0,45.0,225.0,45.0,45.0,True,OBLIQUE_CONSTRUCTIVE
+case_06_wind_slope_cross_90deg,WIND_SLOPE_CROSSWIND_90,90.0,0.0,180.0,90.0,90.0,True,CROSSWIND
+case_07_wind_slope_oblique_135deg,WIND_SLOPE_OBLIQUE_135,90.0,225.0,45.0,135.0,135.0,True,OBLIQUE_PARTIALLY_OPPOSED
+case_08_wind_slope_opposed_180deg,WIND_SLOPE_OPPOSED_180,90.0,270.0,90.0,180.0,180.0,True,OPPOSED

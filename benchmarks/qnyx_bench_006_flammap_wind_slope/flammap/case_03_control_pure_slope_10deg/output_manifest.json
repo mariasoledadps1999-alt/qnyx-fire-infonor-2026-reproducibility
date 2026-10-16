@@ -1,0 +1,48 @@
+{
+  "case_id": "case_03_control_pure_slope_10deg",
+  "flammap_run_name": "BENCH006_CASE03_PURE_SLOPE_10DEG",
+  "flammap_version": "6.2.45.0",
+  "artifacts_count": 5,
+  "artifacts": [
+    {
+      "filename": "basic_rate_of_spread_m_min.tif",
+      "relative_path": "flammap/case_03_control_pure_slope_10deg/outputs/basic_rate_of_spread_m_min.tif",
+      "size_bytes": 3442,
+      "sha256": "4F9B4D891DA29CB66248FE0DAF6FC1DBAA66F572DF96BCDF7C3E4CA2ADA2BE0C",
+      "units": "m/min",
+      "semantic_role": "LOCAL_BASIC_ROS"
+    },
+    {
+      "filename": "midflame_windspeed_m_s.tif",
+      "relative_path": "flammap/case_03_control_pure_slope_10deg/outputs/midflame_windspeed_m_s.tif",
+      "size_bytes": 3038,
+      "sha256": "A472DD38A683AC76E833E5491911D8C0108354C23E0A2A8317E6B3D6DB31878E",
+      "units": "m/s",
+      "semantic_role": "LOCAL_MIDFLAME_WIND"
+    },
+    {
+      "filename": "max_spread_direction_deg.tif",
+      "relative_path": "flammap/case_03_control_pure_slope_10deg/outputs/max_spread_direction_deg.tif",
+      "size_bytes": 3242,
+      "sha256": "84AD464E19A510090EFDD8DD56443BFADC42324FAB76E8B3585A4E17ADC2E0EE",
+      "units": "degrees",
+      "semantic_role": "LOCAL_MAX_SPREAD_DIRECTION"
+    },
+    {
+      "filename": "mtt_arrival_time_min.tif",
+      "relative_path": "flammap/case_03_control_pure_slope_10deg/outputs/mtt_arrival_time_min.tif",
+      "size_bytes": 5072,
+      "sha256": "9DF5A804A810F9914879F4BFAA67A79C565438901AD1CF0B6893E15FDCC36067",
+      "units": "minutes",
+      "semantic_role": "MTT_ARRIVAL_TIME"
+    },
+    {
+      "filename": "mtt_ros_m_min.tif",
+      "relative_path": "flammap/case_03_control_pure_slope_10deg/outputs/mtt_ros_m_min.tif",
+      "size_bytes": 5050,
+      "sha256": "F7AAC1CC83358E5AFAFB6252E5AE04F485AB2715B5895E9A9C7524754DC4BB9A",
+      "units": "m/min",
+      "semantic_role": "MTT_PATH_ROS"
+    }
+  ]
+}

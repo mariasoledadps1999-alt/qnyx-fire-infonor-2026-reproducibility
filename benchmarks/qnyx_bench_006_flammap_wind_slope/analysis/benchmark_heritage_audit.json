@@ -1,0 +1,46 @@
+{
+  "audit_id": "BENCH006_HERITAGE_AUDIT",
+  "description": "Auditor\u00eda de trazabilidad y herencia de par\u00e1metros congelados desde BENCH-001, BENCH-002, BENCH-003 y BENCH-005",
+  "heritage_records": [
+    {
+      "historical_flammap_basic_ros": 1.2120143175125122,
+      "numerical_value_inherited": 1.2120312493509584,
+      "parameter_inherited": "R0_FM1_calm_flat",
+      "role_in_bench006": "Control de base en terreno plano y calma (Case 01)",
+      "source_benchmark": "QNYX-BENCH-001 / FLAMMAP-BENCH-001",
+      "source_commit": "40ce3829",
+      "source_tag": "phase-4.1c-qnyx-bench-001-run",
+      "units": "m/min"
+    },
+    {
+      "historical_flammap_basic_ros": 4.3901949,
+      "historical_flammap_u20_mph": 5.0,
+      "historical_flammap_waf": 0.3626740503584221,
+      "numerical_value_inherited": 0.810649037361145,
+      "parameter_inherited": "midflame_wind_speed_ms_and_spatial_grid_contract",
+      "role_in_bench006": "Velocidad de viento a media llama y contrato geoespacial oficial 301x301 a 30m EPSG:32719 con origen (188850, 6077580)",
+      "source_benchmark": "FLAMMAP-BENCH-002 / QNYX-BENCH-002",
+      "source_commit": "4ef5a594",
+      "source_tag": "phase-4.2c-qnyx-bench-002-run",
+      "units": "m/s"
+    },
+    {
+      "numerical_value_inherited": 1.279537,
+      "parameter_inherited": "phi_s_slope_10deg",
+      "role_in_bench006": "Coeficiente de pendiente para inclinaci\u00f3n de 10\u00b0 (Cases 03, 04, 05, 06, 07, 08)",
+      "source_benchmark": "QNYX-BENCH-003",
+      "source_commit": "e5561839",
+      "source_tag": "phase-5.1b-bench-003-topography-run",
+      "units": "dimensionless"
+    },
+    {
+      "numerical_value_inherited": "0\u00b0, 45\u00b0, 90\u00b0, 135\u00b0, 180\u00b0 geometric suite",
+      "parameter_inherited": "angular_interaction_matrix_and_physical_methodology",
+      "role_in_bench006": "Matriz geom\u00e9trica de interacci\u00f3n viento+pendiente y dise\u00f1o metodol\u00f3gico",
+      "source_benchmark": "QNYX-BENCH-005",
+      "source_commit": "beaf0f19",
+      "source_tag": "phase-5.3a-bench-005-wind-slope-interaction-prep",
+      "units": "degrees"
+    }
+  ]
+}

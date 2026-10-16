@@ -1,0 +1,65 @@
+{
+  "benchmark_id": "QNYX-BENCH-006",
+  "case_id": "case_07_wind_slope_oblique_135deg",
+  "case_role": "WIND_SLOPE_OBLIQUE_135",
+  "description": "Interacci\u00f3n oblicua parcialmente opuesta con separaci\u00f3n angular de 135\u00b0 (viento Este 90\u00b0, pendiente Suroeste 225\u00b0).",
+  "expected_software": "FlamMap",
+  "expected_software_version": "6.2.45.0",
+  "fuel_moistures": {
+    "fms_file": "flammap/common/flame_benchmark.fms",
+    "fms_values": "1 8 9 10 100 100 10",
+    "foliar_moisture_percent": 100
+  },
+  "grid_dimensions": {
+    "cols": 301,
+    "crs": "EPSG:32719",
+    "north_up": true,
+    "origin_x": 188850.0,
+    "origin_y": 6077580.0,
+    "resolution_m": 30.0,
+    "rows": 301
+  },
+  "horizon_minutes": 180.0,
+  "ignition_point": {
+    "col": 150,
+    "row": 150,
+    "shapefile_package": "flammap/common/ignition_center.shp",
+    "x_utm": 193365.0,
+    "y_utm": 6073065.0
+  },
+  "landscape_source": {
+    "expected_lcp_file": "flammap/landscapes/bench006_slope10_up_sw225.lcp",
+    "landscape_id": "LCP05_slope10_up_sw225",
+    "theme_1_elevation": "../../inputs/topographies/topo_slope_10deg_upslope_sw225/elevation.tif",
+    "theme_2_slope": "../../inputs/topographies/topo_slope_10deg_upslope_sw225/slope.tif",
+    "theme_3_aspect": "../../inputs/topographies/topo_slope_10deg_upslope_sw225/aspect.tif",
+    "theme_4_fuel_model": "../../inputs/common/fuel_model.tif",
+    "theme_5_canopy_cover": "../../inputs/common/canopy_cover.tif",
+    "theme_6_canopy_height": "../../inputs/common/canopy_height.tif",
+    "theme_7_canopy_base_height": "../../inputs/common/canopy_base_height.tif",
+    "theme_8_canopy_bulk_density": "../../inputs/common/canopy_bulk_density.tif"
+  },
+  "mtt_parameters": {
+    "lateral_search_depth": 6,
+    "minimum_travel_path_interval_m": 500.0,
+    "resolution_m": 30.0,
+    "spot_probability": 0.0,
+    "spotting_delay_min": 0.0,
+    "vertical_search_depth": 4
+  },
+  "required_output_files": {
+    "basic_ros": "flammap_basic_ros.tif",
+    "max_spread_direction": "flammap_max_spread_direction.tif",
+    "midflame_wind": "flammap_midflame_wind.tif",
+    "mtt_arrival_time": "flammap_mtt_arrival_time.tif",
+    "mtt_ros": "flammap_mtt_ros.tif"
+  },
+  "simulation_mode": "MTT",
+  "status": "READY_FOR_EXECUTION",
+  "wind_settings": {
+    "expected_midflame_wind_ms": 0.810649037361145,
+    "u20_mph": 5.0,
+    "wind_direction_from_deg": 270.0,
+    "wind_reference_height_ft": 20.0
+  }
+}

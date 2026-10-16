@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32719"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          193365.0,
+          6073065.0
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Ignition Point BENCH-002",
+        "row": 150,
+        "col": 150,
+        "time_min": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "dataset_identifier": "reanalysis-era5-land",
+  "product_type": "reanalysis",
+  "provider": "Copernicus Climate Change Service (C3S) / ECMWF",
+  "canonical_product_name": "ERA5-Land hourly data from 1950 to present",
+  "official_cds_dataset_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land",
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_precipitation",
+    "surface_solar_radiation_downwards"
+  ],
+  "year": "2017",
+  "month": "01",
+  "days": [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19"
+  ],
+  "hours": [
+    "00:00",
+    "01:00",
+    "02:00",
+    "03:00",
+    "04:00",
+    "05:00",
+    "06:00",
+    "07:00",
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+    "19:00",
+    "20:00",
+    "21:00",
+    "22:00",
+    "23:00"
+  ],
+  "requested_point": {
+    "latitude": -34.1,
+    "longitude": -71.0
+  },
+  "requested_area_bbox": [
+    -34.05,
+    -71.05,
+    -34.15,
+    -70.95
+  ],
+  "format": "netcdf",
+  "retrieval_timestamp_utc": "2026-09-21T00:33:34.863402+00:00",
+  "raw_file_name": "era5_land_talami_2017_canonical_raw.nc",
+  "file_size_bytes": 86548,
+  "file_sha256": "0bd017d9a7d03b0fa8400cc590a420220a1a15b152ecc5bc96b1f4d78102bee3",
+  "spatial_provenance": {
+    "ignition_latitude": -34.052259,
+    "ignition_longitude": -70.988933,
+    "weather_grid_latitude": -34.1,
+    "weather_grid_longitude": -71.0,
+    "distance_source_to_ignition_km": 5.41,
+    "dataset_resolution": "0.1_deg_approx_9km",
+    "selection_rationale": "Identical meteorological grid point to B1 benchmark for strict comparability"
+  },
+  "provenance_tag": "OFFICIAL_CDS_ERA5_LAND"
+}

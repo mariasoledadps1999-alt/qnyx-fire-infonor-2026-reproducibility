@@ -1,0 +1,389 @@
+{
+  "description": "Golden Benchmarks Externos Independientes para el Kernel de Rothermel (1972 INT-115 / Albini 1976 INT-30 / Scott 2007 RMRS-GTR-192 / BehavePlus 5.0.5)",
+  "cases": [
+    {
+      "case_id": "GB-1.1",
+      "model_id": 1,
+      "model_name": "Short Grass",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 4) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM1, Lectura a pendiente 0% y viento 0 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.0,
+        "dead_100h": 0.0,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 3.6,
+        "ros_m_min": 1.21
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-1.2",
+      "model_id": 1,
+      "model_name": "Short Grass",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 4) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM1, Lectura a pendiente 0% y viento 2 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.0,
+        "dead_100h": 0.0,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 2.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 15.2,
+        "ros_m_min": 5.11
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-1.3",
+      "model_id": 1,
+      "model_name": "Short Grass",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 4) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM1, Lectura a pendiente 0% y viento 5 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.0,
+        "dead_100h": 0.0,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 81.1,
+        "ros_m_min": 27.19
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-1.4",
+      "model_id": 1,
+      "model_name": "Short Grass",
+      "source_type": "BEHAVEPLUS_NUMERIC",
+      "source_document": "Albini (1976, INT-30, p. 86) / BehavePlus 5.0.5",
+      "page_or_figure": "BehavePlus 5.0.5, Wind limit enforced (U_max = 7.804 mph)",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.0,
+        "dead_100h": 0.0,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 10.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 198.4,
+        "ros_m_min": 66.52
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-2.1",
+      "model_id": 2,
+      "model_name": "Timber (Grass and Understory)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 20) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM2, Lectura a pendiente 0% y viento 0 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 1.00,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 3.15,
+        "ros_m_min": 1.06
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-2.2",
+      "model_id": 2,
+      "model_name": "Timber (Grass and Understory)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 20) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM2, Lectura a pendiente 0% y viento 5 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 1.00,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 49.34,
+        "ros_m_min": 16.53
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-4.1",
+      "model_id": 4,
+      "model_name": "Chaparral / High Load Shrub (Multi-class + Live Woody)",
+      "source_type": "BEHAVEPLUS_NUMERIC",
+      "source_document": "Albini (1976, INT-30, p. 72, 88) / Scott (2007, RMRS-GTR-192, p. 24) / BehavePlus",
+      "page_or_figure": "Model 4, Dead 1h=5%, 10h=7%, 100h=9%, Live woody=90%, Wind=0 mph",
+      "inputs": {
+        "dead_1h": 0.05,
+        "dead_10h": 0.07,
+        "dead_100h": 0.09,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.90,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 7.16,
+        "ros_m_min": 2.40
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-4.2",
+      "model_id": 4,
+      "model_name": "Chaparral / High Load Shrub (Multi-class + Live Woody)",
+      "source_type": "BEHAVEPLUS_NUMERIC",
+      "source_document": "Albini (1976, INT-30, p. 72, 88) / Scott (2007, RMRS-GTR-192, p. 24) / BehavePlus",
+      "page_or_figure": "Model 4, Dead 1h=5%, 10h=7%, 100h=9%, Live woody=90%, Wind=5 mph",
+      "inputs": {
+        "dead_1h": 0.05,
+        "dead_10h": 0.07,
+        "dead_100h": 0.09,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.90,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 131.09,
+        "ros_m_min": 43.95
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-8.1",
+      "model_id": 8,
+      "model_name": "Closed Timber Litter (Multi-class)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 28) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM8, Lectura a pendiente 0% y viento 0 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 0.657,
+        "ros_m_min": 0.220
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-8.2",
+      "model_id": 8,
+      "model_name": "Closed Timber Litter (Multi-class)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 28) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM8, Lectura a pendiente 0% y viento 2 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 2.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 1.93,
+        "ros_m_min": 0.647
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-8.3",
+      "model_id": 8,
+      "model_name": "Closed Timber Litter (Multi-class)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 28) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM8, Lectura a pendiente 0% y viento 5 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 5.62,
+        "ros_m_min": 1.88
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-8.4",
+      "model_id": 8,
+      "model_name": "Closed Timber Litter (Multi-class)",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 28) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM8, Lectura a pendiente 0% y viento 10 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 10.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 14.54,
+        "ros_m_min": 4.87
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-9.1",
+      "model_id": 9,
+      "model_name": "Hardwood Litter",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 30) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM9, Lectura a pendiente 0% y viento 0 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 0.87,
+        "ros_m_min": 0.292
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-9.2",
+      "model_id": 9,
+      "model_name": "Hardwood Litter",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 30) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM9, Lectura a pendiente 0% y viento 5 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 9.08,
+        "ros_m_min": 3.04
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-11.1",
+      "model_id": 11,
+      "model_name": "Light Logging Slash",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 34) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM11, Lectura a pendiente 0% y viento 0 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 0.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 2.51,
+        "ros_m_min": 0.841
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "case_id": "GB-11.2",
+      "model_id": 11,
+      "model_name": "Light Logging Slash",
+      "source_type": "NOMOGRAPH",
+      "source_document": "Scott (2007, RMRS-GTR-192, p. 34) / NWCG PMS 436-3",
+      "page_or_figure": "Nomograma FM11, Lectura a pendiente 0% y viento 5 mph",
+      "inputs": {
+        "dead_1h": 0.08,
+        "dead_10h": 0.09,
+        "dead_100h": 0.10,
+        "live_herbaceous": 0.0,
+        "live_woody": 0.0,
+        "midflame_wind_mph": 5.0,
+        "slope_deg": 0.0,
+        "wind_limit_policy": "rothermel_limit"
+      },
+      "expected_output": {
+        "ros_chains_hr": 27.26,
+        "ros_m_min": 9.13
+      },
+      "tolerance_rel": 0.02,
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

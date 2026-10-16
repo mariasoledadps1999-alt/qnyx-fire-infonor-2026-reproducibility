@@ -1,0 +1,276 @@
+{
+  "audit_id": "BENCH005_VECTOR_GEOSPATIAL_AUDIT",
+  "case01_metric_sanity_check": {
+    "bbox_center_utm_coords": [
+      194865.0,
+      6071565.0
+    ],
+    "case_id": "case_01_control_flat_calm",
+    "centroid_utm_coords": [
+      194865.0,
+      6071565.0
+    ],
+    "conclusion": "distance_to_legacy_center_m = 0.000 m when rounded to three decimal places (centroid at 194865.00, 6071565.00 UTM, displaced 2121.320 m from BENCH-002 reference center).",
+    "distance_to_legacy_center_m": 0.0,
+    "distance_to_reference_center_m": 2121.32,
+    "elapsed_minutes": 60,
+    "legacy_ignition_center_utm": [
+      194865.0,
+      6071565.0
+    ],
+    "reference_bench002_center_utm": [
+      193365.0,
+      6073065.0
+    ]
+  },
+  "coordinate_generation_provenance": {
+    "grid_to_utm_formula": "x_utm = transform.c + (col + 0.5)*transform.a; y_utm = transform.f + (row + 0.5)*transform.e",
+    "output_crs": "EPSG:4326 (reprojected from EPSG:32719 via GeoPandas to_crs)",
+    "pipeline_function": "OutputManager.export_perimeters_and_timeline",
+    "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+    "source_crs": "EPSG:32719",
+    "source_raster_transform": [
+      30.0,
+      0.0,
+      190350.0,
+      0.0,
+      -30.0,
+      6076080.0
+    ]
+  },
+  "description": "Auditor\u00eda de proveniencia geoespacial de salidas vectoriales (perimeters.geojson) de BENCH-005",
+  "total_vector_files_characterized": 21,
+  "vector_case_records": [
+    {
+      "case_id": "case_01_control_flat_calm",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_01_control_flat_calm/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_01_control_flat_calm/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_02_control_pure_wind_bench002",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_02_control_pure_wind_bench002/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_02_control_pure_wind_bench002/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_03_control_pure_slope_10deg",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_03_control_pure_slope_10deg/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_03_control_pure_slope_10deg/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_04_moderate_aligned_east",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_04_moderate_aligned_east/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_04_moderate_aligned_east/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_05_moderate_opposed_east",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_05_moderate_opposed_east/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_05_moderate_opposed_east/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_06_moderate_crosswind_plus90",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_06_moderate_crosswind_plus90/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_06_moderate_crosswind_plus90/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_07_moderate_crosswind_minus90",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_07_moderate_crosswind_minus90/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_07_moderate_crosswind_minus90/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_08_moderate_oblique_45",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_08_moderate_oblique_45/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_08_moderate_oblique_45/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_09_moderate_oblique_135",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_09_moderate_oblique_135/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_09_moderate_oblique_135/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_10_balanced_aligned_east",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_10_balanced_aligned_east/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_10_balanced_aligned_east/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_11_balanced_opposed_cancellation",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_11_balanced_opposed_cancellation/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_11_balanced_opposed_cancellation/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_12_balanced_crosswind_plus90",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_12_balanced_crosswind_plus90/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_12_balanced_crosswind_plus90/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_13_balanced_crosswind_minus90",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_13_balanced_crosswind_minus90/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_13_balanced_crosswind_minus90/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_14_strong_wind_aligned_east",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_14_strong_wind_aligned_east/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_14_strong_wind_aligned_east/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_15_strong_wind_opposed_east",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_15_strong_wind_opposed_east/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_15_strong_wind_opposed_east/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_16_strong_wind_crosswind",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_16_strong_wind_crosswind/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_16_strong_wind_crosswind/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_17_rotation_aligned_north",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_17_rotation_aligned_north/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_17_rotation_aligned_north/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_18_rotation_aligned_west",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_18_rotation_aligned_west/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_18_rotation_aligned_west/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_19_rotation_aligned_south",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_19_rotation_aligned_south/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_19_rotation_aligned_south/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_20_rotation_opposed_north",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_20_rotation_opposed_north/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_20_rotation_opposed_north/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    },
+    {
+      "case_id": "case_21_rotation_crosswind_north",
+      "coordinate_generation_method": "Domain.grid_to_utm(r, c) -> Polygon(utm) -> GeoDataFrame.to_crs(epsg=4326)",
+      "feature_count": 4,
+      "output_crs": "EPSG:4326",
+      "perimeter_file": "results/case_21_rotation_crosswind_north/perimeters.geojson",
+      "placement_classification": "ABSOLUTE_VECTOR_GEOSPATIAL_PLACEMENT = SHIFTED",
+      "source_crs": "EPSG:32719",
+      "source_raster": "benchmarks/qnyx_bench_005_wind_slope_interaction/results/case_21_rotation_crosswind_north/arrival_time.tif",
+      "source_raster_transform": "[30.0, 0.0, 190350.0, 0.0, -30.0, 6076080.0]"
+    }
+  ]
+}

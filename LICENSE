@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2026 Q-NYX Fire Research Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+THIRD-PARTY DATA & INTELLECTUAL PROPERTY NOTICES
+================================================================================
+
+1. NASA NASADEM Digital Elevation Model
+   - Source: NASA Jet Propulsion Laboratory (JPL) / USGS.
+   - Status: Public Domain (United States Government Work).
+   - Usage: Used under NASA Open Data Policy.
+
+2. Copernicus Climate Change Service (C3S) / ECMWF ERA5-Land
+   - Source: European Centre for Medium-Range Weather Forecasts (ECMWF).
+   - Terms: Copernicus Open Access Policy / Creative Commons Attribution 4.0 (CC-BY 4.0).
+   - Mandatory Attribution Notice: "Generated using Copernicus Climate Change Service information [2017]."
+   - Disclaimer: Neither the European Commission nor ECMWF is responsible for any use that may be made of the information.
+
+3. Corporación Nacional Forestal (CONAF), Chile
+   - Source: Base de Datos Histórica de Incendios Forestales / Perímetros Oficiales de Incendios.
+   - Terms: Datos Abiertos del Estado de Chile (Ley N° 20.285).
+   - Mandatory Attribution Notice: "Fuente: Corporación Nacional Forestal (CONAF), Chile."
+   - Purpose: Academic and scientific reproducibility research only.
+
+4. USDA Forest Service — Scott & Burgan Standard Fuel Models (RMRS-GTR-153)
+   - Source: USDA Forest Service, Rocky Mountain Research Station (Scott & Burgan, 2005).
+   - Status: Public Domain (United States Federal Government publication).

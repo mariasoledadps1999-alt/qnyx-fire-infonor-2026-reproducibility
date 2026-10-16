@@ -1,0 +1,81 @@
+{
+    "benchmark_id": "QNYX-BENCH-006",
+    "case_id": "case_02_control_pure_wind_bench002",
+    "role": "CONTROL_PURE_WIND",
+    "description": "Control de viento puro en terreno plano (slope=0\u00b0, wind from 270\u00b0). Herencia de BENCH-002.",
+    "engine_identity": "Q-NYX Canonical Fire Propagation Engine (Rothermel + Vector Resultant + Ellipse + Raster Dijkstra)",
+    "propagator": "RASTER_DIJKSTRA_MINIMUM_ARRIVAL_TIME",
+    "propagator_scientific_description": "propagador de tiempo m\u00ednimo tipo Dijkstra sobre un grafo r\u00e1ster discreto",
+    "git_baseline_commit": "69196fd2c6ef09eab68bcc535abc1bb9a38fcdb8",
+    "git_baseline_tag": "phase-5.4c4-bench-006-flammap-cases01-08-complete",
+    "timestamp": "2026-10-16T17:21:24Z",
+    "spatial_domain": {
+        "shape": [
+            301,
+            301
+        ],
+        "resolution_m": 30.0,
+        "crs": "EPSG:32719",
+        "transform": [
+            30.0,
+            0.0,
+            188850.0,
+            0.0,
+            -30.0,
+            6077580.0
+        ],
+        "bounds": {
+            "left": 188850.0,
+            "bottom": 6068550.0,
+            "right": 197880.0,
+            "top": 6077580.0
+        },
+        "ignition_row": 150,
+        "ignition_col": 150,
+        "ignition_coordinates_utm": [
+            193365.0,
+            6073065.0
+        ],
+        "horizon_minutes": 180.0,
+        "stencil": "stencil_16",
+        "intent": "SURFACE_FIRE_ONLY"
+    },
+    "meteorological_and_fuel_inputs": {
+        "fuel_model": "FM1",
+        "fuel_moisture": {
+            "dead_1h": 0.08,
+            "dead_10h": 0.09,
+            "dead_100h": 0.1,
+            "live_herb": 1.0,
+            "live_woody": 1.0
+        },
+        "midflame_wind_speed_ms": 0.810649037361145,
+        "wind_from_direction_deg": 270.0,
+        "wind_towards_direction_deg": 90.0,
+        "slope_deg": 0.0,
+        "upslope_direction_deg": 0.0,
+        "aspect_downslope_deg": 0.0
+    },
+    "local_physics_consistency": {
+        "observed_head_ros_m_min": 4.390204714409195,
+        "frozen_preflight_head_ros_m_min": 4.390205,
+        "head_ros_difference_signed_m_min": -2.855908052268319e-07,
+        "head_ros_difference_rel_pct": -6.505181539969817e-06,
+        "frozen_preflight_heading_deg": 90.0,
+        "local_consistency_status": "PASS"
+    },
+    "spatial_propagation_metrics": {
+        "arrival_cells_180min": 678,
+        "arrival_area_ha_180min": 61.019999999999996,
+        "arrival_min_min": 0.0,
+        "arrival_max_min": 179.48573303222656,
+        "row_min": 137,
+        "row_max": 163,
+        "col_min": 143,
+        "col_max": 176,
+        "max_radial_distance_m": 780.0,
+        "border_contacts": 0,
+        "arrival_burned_mask_equal": true,
+        "domain_clipping_status": "PASS_ZERO_BORDER_CONTACTS"
+    }
+}

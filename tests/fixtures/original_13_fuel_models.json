@@ -1,0 +1,214 @@
+{
+  "source_document": "Albini (1976, USDA Forest Service GTR INT-30, Appendix A, pp. 69-80) / Anderson (1982, INT-122, Table 1, p. 3) / Andrews (2018, RMRS-GTR-371, Table B-1, pp. 95-97)",
+  "set_name": "ORIGINAL_13",
+  "models": {
+    "1": {
+      "code": 1,
+      "name": "Short Grass",
+      "group": "Grass",
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.12,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 0.74, "sav_inv_ft": 3500.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "2": {
+      "code": 2,
+      "name": "Timber (Grass and Understory)",
+      "group": "Grass",
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 2.00, "sav_inv_ft": 3000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 1.00, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 0.50, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_herbaceous", "load_tons_acre": 0.50, "sav_inv_ft": 1500.0, "is_live": true, "is_herbaceous": true }
+      ]
+    },
+    "3": {
+      "code": 3,
+      "name": "Tall Grass",
+      "group": "Grass",
+      "depth_ft": 2.5,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 3.01, "sav_inv_ft": 1500.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "4": {
+      "code": 4,
+      "name": "Chaparral / High Load Shrub",
+      "group": "Shrub",
+      "depth_ft": 6.0,
+      "dead_extinction_moisture": 0.20,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 5.01, "sav_inv_ft": 2000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 4.01, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 2.01, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 5.01, "sav_inv_ft": 1500.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "5": {
+      "code": 5,
+      "name": "Brush / Light Load Shrub",
+      "group": "Shrub",
+      "depth_ft": 2.0,
+      "dead_extinction_moisture": 0.20,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.00, "sav_inv_ft": 2000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 0.50, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 2.00, "sav_inv_ft": 1500.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "6": {
+      "code": 6,
+      "name": "Dormant Brush / Hardwood Slash",
+      "group": "Shrub",
+      "depth_ft": 2.5,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.50, "sav_inv_ft": 1750.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 2.50, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 2.00, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "7": {
+      "code": 7,
+      "name": "Southern Rough",
+      "group": "Shrub",
+      "depth_ft": 2.5,
+      "dead_extinction_moisture": 0.40,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.13, "sav_inv_ft": 1750.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 1.87, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 1.50, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 0.37, "sav_inv_ft": 1550.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "8": {
+      "code": 8,
+      "name": "Closed Timber Litter",
+      "group": "Timber Litter",
+      "depth_ft": 0.2,
+      "dead_extinction_moisture": 0.30,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.50, "sav_inv_ft": 2000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 1.00, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 2.50, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "9": {
+      "code": 9,
+      "name": "Hardwood Litter",
+      "group": "Timber Litter",
+      "depth_ft": 0.2,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 2.92, "sav_inv_ft": 2500.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 0.41, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 0.15, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "10": {
+      "code": 10,
+      "name": "Timber (Litter and Understory)",
+      "group": "Timber Litter",
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 3.01, "sav_inv_ft": 2000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 2.00, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 5.01, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 2.00, "sav_inv_ft": 1500.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "11": {
+      "code": 11,
+      "name": "Light Logging Slash",
+      "group": "Slash",
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.50, "sav_inv_ft": 1500.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 4.51, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 5.51, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "12": {
+      "code": 12,
+      "name": "Medium Logging Slash",
+      "group": "Slash",
+      "depth_ft": 2.3,
+      "dead_extinction_moisture": 0.20,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 4.01, "sav_inv_ft": 1500.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 14.03, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 16.53, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "13": {
+      "code": 13,
+      "name": "Heavy Logging Slash",
+      "group": "Slash",
+      "depth_ft": 3.0,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "heat_content_btu_lb": 8000.0,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 7.01, "sav_inv_ft": 1500.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 23.04, "sav_inv_ft": 109.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 28.05, "sav_inv_ft": 30.0, "is_live": false, "is_herbaceous": false }
+      ]
+    }
+  }
+}

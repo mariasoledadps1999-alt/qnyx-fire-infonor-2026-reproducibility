@@ -1,0 +1,48 @@
+{
+  "case_id": "case_04_wind_slope_aligned_0deg",
+  "flammap_run_name": "BENCH006_CASE04_WIND_SLOPE_ALIGNED",
+  "flammap_version": "6.2.45.0",
+  "artifacts_count": 5,
+  "artifacts": [
+    {
+      "filename": "basic_rate_of_spread_m_min.tif",
+      "relative_path": "flammap/case_04_wind_slope_aligned_0deg/outputs/basic_rate_of_spread_m_min.tif",
+      "size_bytes": 3392,
+      "sha256": "1C06835CEB1FCB63DD9F03266CE4F2435875532C080604AF5681CFA08B2684B3",
+      "units": "m/min",
+      "semantic_role": "LOCAL_BASIC_ROS"
+    },
+    {
+      "filename": "midflame_windspeed_m_s.tif",
+      "relative_path": "flammap/case_04_wind_slope_aligned_0deg/outputs/midflame_windspeed_m_s.tif",
+      "size_bytes": 3392,
+      "sha256": "02913695A0656DC32FA0337B6A64681EE30DD101F330A71E82A6D87B73A733D4",
+      "units": "m/s",
+      "semantic_role": "LOCAL_MIDFLAME_WIND"
+    },
+    {
+      "filename": "max_spread_direction_deg.tif",
+      "relative_path": "flammap/case_04_wind_slope_aligned_0deg/outputs/max_spread_direction_deg.tif",
+      "size_bytes": 3242,
+      "sha256": "84AD464E19A510090EFDD8DD56443BFADC42324FAB76E8B3585A4E17ADC2E0EE",
+      "units": "degrees",
+      "semantic_role": "LOCAL_MAX_SPREAD_DIRECTION"
+    },
+    {
+      "filename": "mtt_arrival_time_min.tif",
+      "relative_path": "flammap/case_04_wind_slope_aligned_0deg/outputs/mtt_arrival_time_min.tif",
+      "size_bytes": 7912,
+      "sha256": "A673D6EB427596745CD5001815DAAEC0F36FD9B260AD1060C7016263BAE3A98C",
+      "units": "minutes",
+      "semantic_role": "MTT_ARRIVAL_TIME"
+    },
+    {
+      "filename": "mtt_ros_m_min.tif",
+      "relative_path": "flammap/case_04_wind_slope_aligned_0deg/outputs/mtt_ros_m_min.tif",
+      "size_bytes": 7906,
+      "sha256": "487111A6FF96CB5AA879DE31295A4A801CF679517B9E247EF5DC5A49729C2DF1",
+      "units": "m/min",
+      "semantic_role": "MTT_PATH_ROS"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+    "benchmark_id": "QNYX-BENCH-006",
+    "case_id": "case_06_wind_slope_cross_90deg",
+    "total_outputs": 5,
+    "outputs": {
+        "arrival_time_min.tif": {
+            "role": "QNYX_MINIMUM_ARRIVAL_TIME_GRID",
+            "provenance": "DIRECT_QNYX_EXECUTION_OUTPUT",
+            "units": "minutes",
+            "dtype": "float32",
+            "shape": [
+                301,
+                301
+            ],
+            "crs": "EPSG:32719",
+            "transform": [
+                30.0,
+                0.0,
+                188850.0,
+                0.0,
+                -30.0,
+                6077580.0
+            ],
+            "nodata": -9999.0,
+            "size_bytes": 363088,
+            "sha256": "116352BC205B0850CF4157632612F729490816FB81A55D891F2156818AA8F493"
+        },
+        "burned_mask_180min.tif": {
+            "role": "QNYX_BURNED_MASK_180MIN",
+            "provenance": "DIRECT_QNYX_EXECUTION_OUTPUT",
+            "units": "binary_indicator_0_1",
+            "dtype": "uint8",
+            "shape": [
+                301,
+                301
+            ],
+            "crs": "EPSG:32719",
+            "transform": [
+                30.0,
+                0.0,
+                188850.0,
+                0.0,
+                -30.0,
+                6077580.0
+            ],
+            "nodata": 0,
+            "size_bytes": 97968,
+            "sha256": "9AC927FD6AACEDD70AA295EA1786FD1AAFC0635F9598DAF4C8B78715C4ADE5A5"
+        },
+        "perimeter_180min.geojson": {
+            "role": "QNYX_PERIMETER_POLYGON_180MIN",
+            "provenance": "DIRECT_QNYX_EXECUTION_OUTPUT",
+            "units": "geojson_polygon_utm",
+            "size_bytes": 10986,
+            "sha256": "B973CC3FE15F0E21D07FA42B54EC26C990AB5F277DB84714A8027CA0F7281264"
+        },
+        "run_metadata.json": {
+            "role": "QNYX_RUN_METADATA",
+            "provenance": "DIRECT_QNYX_EXECUTION_OUTPUT",
+            "units": "json_metadata",
+            "size_bytes": 2903,
+            "sha256": "47F63D4D5B52793785D10399F4D808D8BFA08DB63F88D2B8881B0D25F92949AE"
+        },
+        "fire_intensity_experimental.tif": {
+            "role": "EXPERIMENTAL_PLACEHOLDER",
+            "provenance": "DIRECT_QNYX_EXECUTION_OUTPUT",
+            "units": "kW/m_experimental_uncalibrated",
+            "dtype": "float32",
+            "shape": [
+                301,
+                301
+            ],
+            "crs": "EPSG:32719",
+            "transform": [
+                30.0,
+                0.0,
+                188850.0,
+                0.0,
+                -30.0,
+                6077580.0
+            ],
+            "nodata": -9999.0,
+            "size_bytes": 363088,
+            "sha256": "E3814E2F2E770CD4F67201B7040E4312865C0D240365BC6C71415A6D175CB5F0",
+            "evaluation_status": "EXCLUDED_FROM_BENCHMARK_COMPARISON"
+        }
+    }
+}

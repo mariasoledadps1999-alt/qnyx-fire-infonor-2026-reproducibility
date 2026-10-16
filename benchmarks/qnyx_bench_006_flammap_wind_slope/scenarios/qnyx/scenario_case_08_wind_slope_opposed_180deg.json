@@ -1,0 +1,49 @@
+{
+  "duration_minutes": 180,
+  "fuel_model_set": "ORIGINAL_13",
+  "id": "qnyx_bench_006_case_08_wind_slope_opposed_180deg",
+  "ignition": {
+    "col": 150,
+    "file": null,
+    "lat": null,
+    "lon": null,
+    "row": 150,
+    "status": "benchmark"
+  },
+  "initial_fuel_moisture": {
+    "dead_100h_fraction": 0.1,
+    "dead_10h_fraction": 0.09,
+    "dead_1h_fraction": 0.08,
+    "live_herbaceous_fraction": 1.0,
+    "live_woody_fraction": 1.0,
+    "status": "benchmark"
+  },
+  "output_interval_minutes": 30,
+  "pilot_area": "boundaries/pilot_area.geojson",
+  "propagation": {
+    "apply_partial_barrier_reduction": false,
+    "neighborhood_type": "stencil_16",
+    "rothermel_max_ros": null,
+    "wind_limit_policy": "rothermel_limit"
+  },
+  "rasters": {
+    "aspect": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_west/aspect.tif",
+    "barriers": "qnyx_bench_006_flammap_wind_slope/inputs/common/barriers.tif",
+    "elevation": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_west/elevation.tif",
+    "fuel_model": "qnyx_bench_006_flammap_wind_slope/inputs/common/fuel_model.tif",
+    "slope": "qnyx_bench_006_flammap_wind_slope/inputs/topographies/topo_slope_10deg_upslope_west/slope.tif"
+  },
+  "spread_model": "rothermel",
+  "status": "benchmark",
+  "warning": "Benchmark oficial QNYX-BENCH-006: Interacci\u00f3n colineal opuesta a 180\u00b0 (viento Este 90\u00b0, pendiente Oeste 270\u00b0). Dominancia de viento (Phi_w > Phi_s) mantiene avance hacia el Este.",
+  "weather": {
+    "file": null,
+    "midflame_wind_ms": 0.810649037361145,
+    "precipitation_mm": 0.0,
+    "relative_humidity_pct": 38.0,
+    "status": "benchmark",
+    "temperature_c": 24.0,
+    "wind_direction_deg": 270.0,
+    "wind_speed_ms": 0.810649037361145
+  }
+}

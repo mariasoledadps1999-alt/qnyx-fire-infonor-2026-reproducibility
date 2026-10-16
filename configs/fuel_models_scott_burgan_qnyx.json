@@ -1,0 +1,270 @@
+{
+  "catalog_name": "SCOTT_BURGAN_STANDARD_FUEL",
+  "provenance": {
+    "source_standard": "USDA Forest Service RMRS-GTR-153 (Scott & Burgan, 2005)",
+    "title": "Standard Fire Behavior Fuel Models: A Comprehensive Set for Use with Rothermel's Surface Fire Spread Model",
+    "authors": "Joe H. Scott and Robert E. Burgan",
+    "year": 2005,
+    "table_references": ["Table 1 (Summary of fuel model parameters)", "Table 7 (Fuel model parameters for 40 standard fire behavior fuel models)"]
+  },
+  "unit_contract": {
+    "fuel_load": {
+      "source_unit": "tons/acre",
+      "engine_unit": "lb/ft^2",
+      "conversion_factor": 0.04591368227731864,
+      "formula": "tons_acre * 2000.0 / 43560.0"
+    },
+    "fuel_bed_depth": {
+      "source_unit": "feet",
+      "engine_unit": "feet",
+      "conversion_factor": 1.0,
+      "formula": "identity"
+    },
+    "surface_area_to_volume_ratio": {
+      "source_unit": "1/ft (ft^-1)",
+      "engine_unit": "1/ft (ft^-1)",
+      "conversion_factor": 1.0,
+      "formula": "identity"
+    },
+    "heat_content": {
+      "source_unit": "Btu/lb",
+      "engine_unit": "Btu/lb",
+      "conversion_factor": 1.0,
+      "formula": "identity"
+    },
+    "moisture_of_extinction": {
+      "source_unit": "percent (%)",
+      "engine_unit": "dimensionless fraction (0.0 - 1.0)",
+      "conversion_factor": 0.01,
+      "formula": "percent / 100.0"
+    },
+    "particle_density": {
+      "source_unit": "lb/ft^3",
+      "engine_unit": "lb/ft^3",
+      "default_value": 32.0
+    },
+    "mineral_content": {
+      "total_mineral_st": 0.0555,
+      "effective_mineral_se": 0.010
+    }
+  },
+  "dynamic_fuel_contract": {
+    "live_herb_curing_formula": "Scott & Burgan (2005) RMRS-GTR-153 pp. 7-8",
+    "fully_green_threshold": 1.20,
+    "fully_cured_threshold": 0.30,
+    "transfer_fraction_formula": "(1.20 - M_lh) / 0.90",
+    "transferred_fuel_destination": "dead fine fuel (evaluated at 1-h dead moisture, retaining herbaceous SAV and heat content)"
+  },
+  "fmc_contract": {
+    "dead_1h": "1-hour timelag dead fuel moisture (< 0.25 inch), fraction",
+    "dead_10h": "10-hour timelag dead fuel moisture (0.25 - 1.0 inch), fraction",
+    "dead_100h": "100-hour timelag dead fuel moisture (1.0 - 3.0 inch), fraction",
+    "live_herbaceous": "Live herbaceous fuel moisture, fraction (ranges 0.30 - 1.20+)",
+    "live_woody": "Live woody fuel moisture, fraction (typically 0.60 - 1.50+)",
+    "note": "Atmospheric RH != FMC. Direct RH -> FMC conversion is strictly prohibited."
+  },
+  "models": {
+    "93": {
+      "raster_code": 93,
+      "sb_code": "NB3",
+      "name": "Agricultural",
+      "group": "NB",
+      "description": "Agricultural lands, irrigated croplands, managed pasture or orchard without dynamic spread",
+      "burnable": false,
+      "dynamic": false,
+      "depth_ft": 0.0,
+      "dead_extinction_moisture": 0.0,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": []
+    },
+    "99": {
+      "raster_code": 99,
+      "sb_code": "NB9",
+      "name": "Bare Ground / Rock",
+      "group": "NB",
+      "description": "Barren land, rock outcrops, quarries, sand dunes, paved or unburnable mineral soil",
+      "burnable": false,
+      "dynamic": false,
+      "depth_ft": 0.0,
+      "dead_extinction_moisture": 0.0,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": []
+    },
+    "101": {
+      "raster_code": 101,
+      "sb_code": "GR1",
+      "name": "Short, Sparse Dry Climate Grass",
+      "group": "GR",
+      "description": "Short, sparse dry climate grass (dynamic curing)",
+      "burnable": true,
+      "dynamic": true,
+      "depth_ft": 0.4,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 0.10, "sav_inv_ft": 2200.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_herbaceous", "load_tons_acre": 0.30, "sav_inv_ft": 2000.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": true }
+      ]
+    },
+    "102": {
+      "raster_code": 102,
+      "sb_code": "GR2",
+      "name": "Low Load, Dry Climate Grass",
+      "group": "GR",
+      "description": "Low load, continuous dry climate grass (dynamic curing)",
+      "burnable": true,
+      "dynamic": true,
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 0.10, "sav_inv_ft": 2000.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_herbaceous", "load_tons_acre": 1.00, "sav_inv_ft": 1800.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": true }
+      ]
+    },
+    "123": {
+      "raster_code": 123,
+      "sb_code": "GS3",
+      "name": "Moderate Load, Humid Climate Grass-Shrub",
+      "group": "GS",
+      "description": "Moderate load humid climate grass-shrub mixture (dynamic curing)",
+      "burnable": true,
+      "dynamic": true,
+      "depth_ft": 1.8,
+      "dead_extinction_moisture": 0.40,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.45, "sav_inv_ft": 1500.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 0.80, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_herbaceous", "load_tons_acre": 0.65, "sav_inv_ft": 1800.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": true },
+        { "name": "live_woody", "load_tons_acre": 1.45, "sav_inv_ft": 1600.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "142": {
+      "raster_code": 142,
+      "sb_code": "SH2",
+      "name": "Moderate Load, Dry Climate Shrub",
+      "group": "SH",
+      "description": "Moderate load dry climate shrubland / matorral",
+      "burnable": true,
+      "dynamic": false,
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.35, "sav_inv_ft": 2000.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 2.40, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 0.75, "sav_inv_ft": 30.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 3.85, "sav_inv_ft": 1600.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "145": {
+      "raster_code": 145,
+      "sb_code": "SH5",
+      "name": "High Load, Dry Climate Shrub",
+      "group": "SH",
+      "description": "High load dry climate shrubland / mature dense matorral",
+      "burnable": true,
+      "dynamic": false,
+      "depth_ft": 6.0,
+      "dead_extinction_moisture": 0.15,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 3.60, "sav_inv_ft": 750.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 2.10, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 2.90, "sav_inv_ft": 1600.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "163": {
+      "raster_code": 163,
+      "sb_code": "TU3",
+      "name": "Moderate Load, Humid Climate Timber-Grass-Shrub",
+      "group": "TU",
+      "description": "Moderate load timber with grass and shrub understory (dynamic curing)",
+      "burnable": true,
+      "dynamic": true,
+      "depth_ft": 1.3,
+      "dead_extinction_moisture": 0.30,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.10, "sav_inv_ft": 1600.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 0.15, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_herbaceous", "load_tons_acre": 0.65, "sav_inv_ft": 1800.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": true },
+        { "name": "live_woody", "load_tons_acre": 1.10, "sav_inv_ft": 1500.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "165": {
+      "raster_code": 165,
+      "sb_code": "TU5",
+      "name": "Very High Load, Dry Climate Timber-Shrub",
+      "group": "TU",
+      "description": "Very high load dry climate timber with heavy shrub understory",
+      "burnable": true,
+      "dynamic": false,
+      "depth_ft": 1.0,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 4.00, "sav_inv_ft": 1500.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 4.00, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 3.00, "sav_inv_ft": 30.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "live_woody", "load_tons_acre": 3.00, "sav_inv_ft": 750.0, "heat_btu_lb": 8000.0, "is_live": true, "is_herbaceous": false }
+      ]
+    },
+    "185": {
+      "raster_code": 185,
+      "sb_code": "TL5",
+      "name": "High Load Conifer Litter",
+      "group": "TL",
+      "description": "High load conifer litter bed with light slash or mortality",
+      "burnable": true,
+      "dynamic": false,
+      "depth_ft": 0.6,
+      "dead_extinction_moisture": 0.25,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 1.15, "sav_inv_ft": 2000.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 2.50, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_100h", "load_tons_acre": 4.20, "sav_inv_ft": 30.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false }
+      ]
+    },
+    "189": {
+      "raster_code": 189,
+      "sb_code": "TL9",
+      "name": "Very High Load Broadleaf Litter",
+      "group": "TL",
+      "description": "Very high load broadleaf hardwood and evergreen litter bed",
+      "burnable": true,
+      "dynamic": false,
+      "depth_ft": 0.6,
+      "dead_extinction_moisture": 0.35,
+      "total_mineral_content": 0.0555,
+      "effective_mineral_content": 0.010,
+      "particle_density_lb_ft3": 32.0,
+      "particle_classes": [
+        { "name": "dead_1h", "load_tons_acre": 6.65, "sav_inv_ft": 1800.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false },
+        { "name": "dead_10h", "load_tons_acre": 4.30, "sav_inv_ft": 109.0, "heat_btu_lb": 8000.0, "is_live": false, "is_herbaceous": false }
+      ]
+    }
+  }
+}

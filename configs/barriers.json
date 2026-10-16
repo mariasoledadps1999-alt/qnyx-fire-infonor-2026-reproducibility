@@ -1,0 +1,53 @@
+{
+  "status": "provisional",
+  "barrier_categories": {
+    "0": {
+      "name": "terreno normal",
+      "is_absolute_barrier": false,
+      "permeability": 1.0,
+      "ros_reduction_factor": 1.0,
+      "crossing_probability": 1.0,
+      "max_jump_distance_m": 30.0
+    },
+    "1": {
+      "name": "agua",
+      "is_absolute_barrier": true,
+      "permeability": 0.0,
+      "ros_reduction_factor": 0.0,
+      "crossing_probability": 0.0,
+      "max_jump_distance_m": 0.0
+    },
+    "2": {
+      "name": "camino principal",
+      "is_absolute_barrier": false,
+      "permeability": 0.25,
+      "ros_reduction_factor": 0.2,
+      "crossing_probability": 0.20,
+      "max_jump_distance_m": 15.0
+    },
+    "3": {
+      "name": "camino secundario",
+      "is_absolute_barrier": false,
+      "permeability": 0.5,
+      "ros_reduction_factor": 0.5,
+      "crossing_probability": 0.50,
+      "max_jump_distance_m": 10.0
+    },
+    "4": {
+      "name": "área urbana",
+      "is_absolute_barrier": false,
+      "permeability": 0.1,
+      "ros_reduction_factor": 0.1,
+      "crossing_probability": 0.10,
+      "max_jump_distance_m": 10.0
+    },
+    "5": {
+      "name": "suelo sin combustible",
+      "is_absolute_barrier": true,
+      "permeability": 0.0,
+      "ros_reduction_factor": 0.0,
+      "crossing_probability": 0.0,
+      "max_jump_distance_m": 0.0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "audit_id": "FLAMMAP_WIND_SEMANTICS_AUDIT",
+  "description": "Recuperaci\u00f3n formal de la configuraci\u00f3n de viento y sem\u00e1ntica WAF desde FLAMMAP-BENCH-002",
+  "flammap_configuration": {
+    "expected_version": "6.2.45.0",
+    "input_wind_speed": 5.0,
+    "input_wind_units": "mph (U20)",
+    "observed_midflame_wind_mph": 1.81338006,
+    "observed_midflame_wind_ms": 0.810649037361145,
+    "observed_waf": 0.3626740503584221,
+    "qnyx_parity_rule": "Q-NYX recibe directamente como midflame_wind_ms el valor de 0.810649037361145 m/s, garantizando paridad f\u00edsica estricta en el kernel de Rothermel sin ambig\u00fcedad de altura de referencia.",
+    "reduction_semantics": "FlamMap aplica WAF internamente en funci\u00f3n del modelo de combustible (FM1) y canopy cover (0% -> unsheltered).",
+    "software": "FlamMap",
+    "wind_direction_convention": "Azimuth FROM which wind blows (270\u00b0 = from West -> spreads to 90\u00b0 East)",
+    "wind_direction_from_deg": 270.0,
+    "wind_reference_height_ft": 20.0
+  },
+  "source_files": [
+    "benchmarks/flammap_bench_002/flammap/run_manifest.json",
+    "FASE_4_2B_FLAMMAP_BENCH_002_RUN.md",
+    "FASE_4_2C_QNYX_BENCH_002_OFFICIAL_RUN.md"
+  ]
+}

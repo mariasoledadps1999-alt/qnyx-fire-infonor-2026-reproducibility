@@ -1,0 +1,16 @@
+# Q-NYX Fire — INFONOR 2026 Reproducibility Package Dependencies
+# Pinned versions reflect the verified audit baseline on Python 3.8 / 3.11
+# Compatible with Python 3.8, 3.9, 3.10, 3.11, and 3.12
+
+numpy>=1.24.0,<=2.4.6
+scipy>=1.10.0,<=1.17.1
+rasterio>=1.3.0,<=1.4.4
+geopandas>=0.13.0,<=1.1.4
+shapely>=2.0.0,<=2.1.2
+pyproj>=3.5.0,<=3.7.2
+pandas>=2.0.0,<=3.0.5
+pydantic>=2.0.0,<=2.13.4
+scikit-image>=0.21.0,<=0.26.0
+matplotlib>=3.7.0,<=3.11.1
+pyyaml>=6.0.0,<=6.0.2
+pytest>=7.3.0,<=9.1.1

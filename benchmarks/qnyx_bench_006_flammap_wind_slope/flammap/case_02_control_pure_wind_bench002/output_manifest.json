@@ -1,0 +1,62 @@
+{
+    "case_id": "case_02_control_pure_wind_bench002",
+    "run_name": "BENCH006_CASE02_FLAT_PURE_WIND",
+    "flammap_version": "6.2.45.0",
+    "landscape_lcp": "flammap/landscapes/bench006_flat.lcp",
+    "execution_classification": "VALID_FULL_HORIZON_SPATIAL_OUTPUT",
+    "spatial_promotion_status": "FULL_HORIZON_RECHECK_PROMOTED",
+    "outputs": {
+        "basic_rate_of_spread_m_min.tif": {
+            "role": "LOCAL_BASIC_ROS",
+            "provenance": "DIRECT_FLAMMAP_EXPORT",
+            "units": "m/min",
+            "sha256": "F003786DF2636C3ED07DAA6A09B83E96DED33A7122370B3C25BE8030771CDB44",
+            "size_bytes": 3342
+        },
+        "midflame_windspeed_m_s.tif": {
+            "role": "LOCAL_MIDFLAME_WIND",
+            "provenance": "DIRECT_FLAMMAP_EXPORT",
+            "units": "m/s",
+            "sha256": "02913695A0656DC32FA0337B6A64681EE30DD101F330A71E82A6D87B73A733D4",
+            "size_bytes": 3392
+        },
+        "max_spread_direction_deg.tif": {
+            "role": "LOCAL_MAX_SPREAD_DIRECTION",
+            "provenance": "DIRECT_FLAMMAP_EXPORT",
+            "units": "degrees_from_north",
+            "sha256": "84AD464E19A510090EFDD8DD56443BFADC42324FAB76E8B3585A4E17ADC2E0EE",
+            "size_bytes": 3242
+        },
+        "mtt_arrival_time_min.tif": {
+            "role": "MTT_ARRIVAL_TIME_PROMOTED",
+            "provenance": "DIRECT_FLAMMAP_EXPORT",
+            "units": "minutes",
+            "sha256": "DE1674512CD0EBDDCCC9AF3C853F1A8620676D370E314B8BB67B47CDF5C88A39",
+            "size_bytes": 6784
+        },
+        "mtt_ros_m_min.tif": {
+            "role": "MTT_PATH_ROS_PROMOTED",
+            "provenance": "DIRECT_FLAMMAP_EXPORT",
+            "units": "m/min",
+            "sha256": "95B088C36540EFFCEAAC2270CD48CF7B50325C18A752327BDAD53DC979ADE6EB",
+            "size_bytes": 6760
+        }
+    },
+    "historical_provenance_artifacts": {
+        "mtt_arrival_time_min_initial_incomplete.tif": {
+            "role": "INITIAL_INCOMPLETE_SPATIAL_OUTPUT",
+            "provenance": "DIRECT_FLAMMAP_EXPORT_INITIAL",
+            "sha256": "27211C054A1A87AF715BA0A9B584DD1715B998EF48CB87E426B603D050334EED",
+            "size_bytes": 4214,
+            "observed_max_arrival_min": 94.6817626953125,
+            "observed_cells": 204
+        },
+        "mtt_ros_m_min_initial_incomplete.tif": {
+            "role": "INITIAL_INCOMPLETE_SPATIAL_OUTPUT",
+            "provenance": "DIRECT_FLAMMAP_EXPORT_INITIAL",
+            "sha256": "578F914A621B1104D91CFD92BDB008BAE76F4526269DF997AC02E4CF1A0E8A6D",
+            "size_bytes": 4208,
+            "observed_cells": 204
+        }
+    }
+}

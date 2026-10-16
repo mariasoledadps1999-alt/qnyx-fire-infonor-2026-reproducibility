@@ -1,0 +1,10 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>MTT ROS</Description>
+    <UnitType>m/min</UnitType>
+    <Metadata>
+      <MDI key="RepresentationType">THEMATIC</MDI>
+      <MDI key="UnitOfMeasure">m/min</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

@@ -1,0 +1,10 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Midflame Windspeed</Description>
+    <UnitType>m/sec</UnitType>
+    <Metadata>
+      <MDI key="RepresentationType">THEMATIC</MDI>
+      <MDI key="UnitOfMeasure">m/sec</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

@@ -1,0 +1,82 @@
+# Q-NYX Scenario Specification: Talamí Historical Fire 2017
+# Scientific Standard: QNYX-OPS-001
+
+scenario_id: TALAMI_2017
+crs: "EPSG:32719"
+
+domain:
+  xmin: 299760
+  ymin: 6217530
+  xmax: 329220
+  ymax: 6236730
+  resolution_m: 100
+  grid_definition: CANONICAL_SB100_GRID
+
+ignition:
+  x: 316425
+  y: 6230260
+  # CRITICAL: Do NOT define any ignition hour as ground truth.
+  # Official record is unknown/approximate. Any start time used in simulations
+  # is strictly a scenario hypothesis / sensitivity exploration parameter.
+  exact_time_status: UNKNOWN
+  candidate_start_times_utc:
+    - "2017-01-16T17:00:00Z"
+    - "2017-01-16T18:00:00Z"
+    - "2017-01-16T19:00:00Z"
+    - "2017-01-16T20:00:00Z"
+    - "2017-01-16T21:00:00Z"
+    - "2017-01-16T22:00:00Z"
+    - "2017-01-16T23:00:00Z"
+    - "2017-01-17T00:00:00Z"
+
+fuel:
+  resolution_m: 100
+  reconstruction_model: MODEL_A_REMOTE_CANONICAL_VALID_ONLY
+  grid: CANONICAL_SB100_GRID
+  feature_cube: TALAMI_2017_FEATURE_CUBE
+  coverage_closure_table: FUEL_AI_002A2_TALAMI_OPTICAL_COVERAGE_CLOSURE
+  num_target_classes: 13
+
+fire:
+  resolution_m: 30
+  propagation_branch: "CANONICAL_ADVANCED_ROTHERMEL"
+  fuel_model_catalog: "SCOTT_BURGAN_STANDARD_FUEL"
+  fuel_raster: "benchmarks/historical_talami_2017/chile_fuel_reference/TALAMI_2017_FUEL_MODEL_FIREGRID_30M.tif"
+  reference_integration_start_utc: "2017-01-14T18:00:00Z"
+  reference_integration_start_clt: "2017-01-14 15:00 CLT"
+  start_time_status: "SCENARIO_HYPOTHESIS"
+  historical_truth: false
+  simulation_horizon_hours: 12.0
+  simulation_start_utc: "2017-01-14T18:00:00Z"
+  simulation_end_utc: "2017-01-15T06:00:00Z"
+  live_fuel_moisture:
+    live_herbaceous: 0.60
+    live_woody: 0.90
+    provenance: "UNVALIDATED_SCENARIO_ASSUMPTION"
+    purpose: "ENGINE_INTEGRATION_REFERENCE_ONLY"
+  wind_adjustment_factor: 0.40
+  waf_provenance: "UNVALIDATED_SCENARIO_ASSUMPTION"
+  neighborhood_type: "stencil_16"
+  wind_limit_policy: "rothermel_limit"
+  known_limitations:
+    - "TIME_DEPENDENT_REACTIVATION_LIMITATION"
+  reactivation_failure_observed_in_fire_talami_001: false
+
+terrain:
+  source: NASADEM
+  reference_raster: "benchmarks/historical_talami_2017/b0/input/elevation.tif"
+
+weather:
+  source: ERA5_LAND
+  canonical_nc: "benchmarks/historical_talami_2017/weather_v2_nelson/raw/canonical_era5_land/era5_land_talami_2017_canonical.nc"
+  hourly_csv: "benchmarks/historical_talami_2017/weather_v2_nelson/processed/meteo_talami_nelson_hourly.csv"
+  subhourly_csv: "benchmarks/historical_talami_2017/weather_v2_nelson/processed/meteo_talami_nelson_5min.csv"
+
+moisture:
+  model: NELSON
+  fuel_stick_class: "10h"
+
+validation:
+  conaf_final_perimeter_role: FINAL_ENVELOPE_REFERENCE
+  conaf_shapefile: "benchmarks/historical_talami_2017/b0/input/conaf_perimeter.shp"
+  firms_detections_csv: "benchmarks/historical_talami_2017/b0/input/firms_viirs_modis.csv"

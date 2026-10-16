@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package or the Q-NYX Fire engine in your research, please cite it as below."
+authors:
+  - family-names: "Q-NYX Fire Research Team"
+    given-names: "Scientific Group"
+title: "Q-NYX Fire: Deterministic Wildfire Propagation Engine, Historical Validation, and Controlled Benchmark Against FlamMap"
+version: 1.0.0
+date-released: "2026-10-16"
+url: "https://github.com/qnyx-fire/qnyx-fire-infonor-2026-reproducibility"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Vidal"
+      given-names: "Luis"
+    - family-names: "Q-NYX Research Team"
+      given-names: "Authors"
+  title: "Q-NYX Fire: Deterministic Wildfire Propagation Engine, Historical Validation, and Controlled Benchmark Against FlamMap"
+  conference:
+    name: "XVII Congreso Internacional de Computación e Informática del Norte de Chile (INFONOR 2026)"
+  year: 2026
+  month: 10
+  abstract: "This paper presents the scientific architecture, physical coupling, and reproducibility validation of the Q-NYX Fire simulation engine. We evaluate Rothermel surface fire rate of spread, Nelson physical dead fuel moisture equilibrium, directional Albini-Anderson vector combination on a 16-neighbor stencil Dijkstra arrival-time solver, validated over the Talamí 2017 historical wildfire domain (Chile) and benchmarked against USDA Forest Service FlamMap 6.2 Minimum Travel Time (MTT)."
